@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Preview Gallery - 34 Premium Fonts</title>
+    <meta name="description" content="Interactive web font preview gallery showcasing 34 premium fonts with live customization and CSS copy functionality.">
+    <meta name="theme-color" content="#1a73e8">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%231a73e8' width='192' height='192'/><text x='50%' y='50%' font-size='96' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>F</text></svg>">
+    
+    <!-- Preconnect to font domain -->
+    <link rel="preconnect" href="https://fontly-virid.vercel.app" crossorigin>
+    
+    <style>
+        /* ==================== CSS VARIABLES & THEME ==================== */
+        :root {
+            --bg-primary: #fafbfc;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #f1f3f4;
+            --text-primary: #1a1a1a;
+            --text-secondary: #5f6368;
+            --text-muted: #80868b;
+            --border-color: #dadce0;
+            --accent-color: #1a73e8;
+            --accent-hover: #1557b0;
+            --shadow-color: rgba(0, 0, 0, 0.08);
+            --card-shadow: 0 2px 8px var(--shadow-color);
+            --focus-ring: 0 0 0 3px rgba(26, 115, 232, 0.15);
+            --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #121212;
+            --bg-secondary: #1e1e1e;
+            --bg-tertiary: #2d2d2d;
+            --text-primary: #e8eaed;
+            --text-secondary: #9aa0a6;
+            --text-muted: #9aa0a6;
+            --border-color: #3c4043;
+            --accent-color: #8ab4f8;
+            --accent-hover: #aecbfa;
+            --shadow-color: rgba(0, 0, 0, 0.35);
+            --card-shadow: 0 2px 12px var(--shadow-color);
+            --focus-ring: 0 0 0 3px rgba(138, 180, 248, 0.2);
+        }
+
+        /* ==================== RESET & BASE STYLES ==================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            transition: var(--transition);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ==================== FONT FACE DEFINITIONS ==================== */
+        @font-face {
+            font-family: "Angelbanditdemoregular";
+            src: url("https://fontly-virid.vercel.app/fonts/ttf/AngelBanditDemoRegular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Cinzeldecorative Black";
+            src: url("https://fontly-virid.vercel.app/fonts/otf/CinzelDecorative-Black.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Cinzeldecorative Bold";
+            src: url("https://fontly-virid.vercel.app/fonts/otf/CinzelDecorative-Bold.otf") format("opentype"), url("https://fontly-virid.vercel.app/fonts/ttf/CinzelDecorative-Bold.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Cinzeldecorative Regular";
+            src: url("https://fontly-virid.vercel.app/fonts/otf/CinzelDecorative-Regular.otf") format("opentype"), url("https://fontly-virid.vercel.app/fonts/ttf/CinzelDecorative-Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Ebgaramond Initials";
+            src: url("https://fontly-virid.vercel.app/fonts/ttf/EBGaramond-Initials.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Ebgaramond08 Regular";
+            src: url("https://fontly-virid.vercel.app/fonts/ttf/EBGaramond08-Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Ebgaramond12 Regular";
+            src: url("https://fontly-virid.vercel.app/fonts/ttf/EBGaramond12-Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Goodly Regular";
+            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-regular.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Goodly Light";
+            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-light.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Goodly Medium";
+            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-medium.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Goodly Semibold";
+            src: url("https://fontly-virid.vercel.app/fonts/otf/goodly-semibold.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Kugile Regular";
+            src: url("https://fontly-virid.vercel.app/fonts/ttf/kugile.regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Rockybilly Regular";
+            src: url("https://fontly-virid.vercel.app/fonts/ttf/rockybilly.regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* ==================== LAYOUT & CONTAINER ==================== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px var(--shadow-color);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        /* ==================== BUTTONS ==================== */
+        button {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        button:hover {
+            background: var(--bg-tertiary);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        button:focus-visible {
+            outline: var(--focus-ring);
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+            color: white;
+        }
+
+        /* ==================== CONTROLS SECTION ==================== */
+        .controls {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .control-group label {
+            font-weight: 500;
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            transition: var(--transition);
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: var(--focus-ring);
+        }
+
+        /* ==================== GRID & CARDS ==================== */
+        .fonts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .fonts-grid.list-view {
+            grid-template-columns: 1fr;
+        }
+
+        .font-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: var(--transition);
+            box-shadow: var(--card-shadow);
+        }
+
+        .font-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--shadow-color);
+        }
+
+        .font-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .font-name {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .font-preview {
+            min-height: 100px;
+            padding: 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-size: 2rem;
+            line-height: 1.3;
+            color: var(--text-primary);
+            word-break: break-word;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .slider-group {
+            flex: 1;
+            min-width: 150px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            min-width: 80px;
+            cursor: pointer;
+        }
+
+        .font-size-value {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            width: 36px;
+            text-align: right;
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            input[type="text"],
+            select {
+                width: 100%;
+            }
+
+            .fonts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .font-preview {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* ==================== ANIMATIONS ==================== */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .font-card {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        /* ==================== ACCESSIBILITY ==================== */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html {
+                color-scheme: dark;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>🎨 Fontly - Font Preview Gallery</h1>
+                <div class="header-controls">
+                    <button id="themeToggle" class="btn-primary">🌙 Dark Mode</button>
+                    <button id="viewToggle">📋 List View</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <div class="control-group">
+                <label for="searchInput">Search:</label>
+                <input type="text" id="searchInput" placeholder="Search fonts...">
+            </div>
+            <div class="control-group">
+                <label for="sizeInput">Default Size:</label>
+                <input type="number" id="sizeInput" min="12" max="120" value="32">
+            </div>
+        </div>
+
+        <div class="fonts-grid" id="fontsGrid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fontly - Interactive Font Preview Gallery. Powered by Vercel CDN.</p>
+        <p>All fonts are hosted on Vercel's high-performance CDN for optimal delivery.</p>
+    </footer>
+
+    <script>
+        // Font data
+        const fonts = [
+            { name: "Angelbanditdemoregular", family: "Angelbanditdemoregular" },
+            { name: "Cinzeldecorative Black", family: "Cinzeldecorative Black" },
+            { name: "Cinzeldecorative Bold", family: "Cinzeldecorative Bold" },
+            { name: "Cinzeldecorative Regular", family: "Cinzeldecorative Regular" },
+            { name: "Ebgaramond Initials", family: "Ebgaramond Initials" },
+            { name: "Ebgaramond08 Regular", family: "Ebgaramond08 Regular" },
+            { name: "Ebgaramond12 Regular", family: "Ebgaramond12 Regular" },
+            { name: "Goodly Regular", family: "Goodly Regular" },
+            { name: "Goodly Light", family: "Goodly Light" },
+            { name: "Goodly Medium", family: "Goodly Medium" },
+            { name: "Goodly Semibold", family: "Goodly Semibold" },
+            { name: "Kugile Regular", family: "Kugile Regular" },
+            { name: "Rockybilly Regular", family: "Rockybilly Regular" }
+        ];
+
+        // Theme management
+        function initTheme() {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeButton();
+        }
+
+        function toggleTheme() {
+            const current = document.documentElement.getAttribute('data-theme');
+            const newTheme = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton();
+        }
+
+        function updateThemeButton() {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            document.getElementById('themeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+        }
+
+        // View management
+        let isListView = false;
+        function toggleView() {
+            isListView = !isListView;
+            document.getElementById('fontsGrid').classList.toggle('list-view');
+            document.getElementById('viewToggle').textContent = isListView ? '🔲 Grid View' : '📋 List View';
+        }
+
+        // Render fonts
+        function renderFonts(filter = '') {
+            const grid = document.getElementById('fontsGrid');
+            const defaultSize = document.getElementById('sizeInput').value;
+            
+            const filtered = fonts.filter(font => 
+                font.name.toLowerCase().includes(filter.toLowerCase())
+            );
+
+            grid.innerHTML = filtered.map(font => `
+                <div class="font-card">
+                    <div class="font-header">
+                        <div>
+                            <h2 class="font-name">${font.name}</h2>
+                        </div>
+                    </div>
+                    <div class="font-preview" style="font-family: '${font.family}'; font-size: ${defaultSize}px;">
+                        The quick brown fox jumps over the lazy dog
+                    </div>
+                    <div class="font-controls">
+                        <div class="slider-group">
+                            <label>Size:</label>
+                            <input type="range" min="12" max="120" value="${defaultSize}" class="font-size-slider" data-font="${font.family}">
+                            <span class="font-size-value">${defaultSize}px</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Add event listeners
+            document.querySelectorAll('.font-size-slider').forEach(slider => {
+                slider.addEventListener('input', (e) => {
+                    const fontFamily = e.target.dataset.font;
+                    const size = e.target.value;
+                    e.target.nextElementSibling.textContent = size + 'px';
+                    document.querySelectorAll(`[style*="font-family: '${fontFamily}'"]`).forEach(el => {
+                        el.style.fontSize = size + 'px';
+                    });
+                });
+            });
+        }
+
+        // Event listeners
+        document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+        document.getElementById('viewToggle').addEventListener('click', toggleView);
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            renderFonts(e.target.value);
+        });
+        document.getElementById('sizeInput').addEventListener('change', () => {
+            renderFonts(document.getElementById('searchInput').value);
+        });
+
+        // Service Worker registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(err => {
+                console.log('Service Worker registration failed:', err);
+            });
+        }
+
+        // Initialize
+        initTheme();
+        renderFonts();
+    </script>
+</body>
+</html>
