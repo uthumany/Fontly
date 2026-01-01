@@ -28,31 +28,70 @@ Experience the gallery immediately:
 
 [**👉 Launch Fontly Live Demo**](https://fontly-virid.vercel.app)
 
-### 2. Integrate Fonts into Your Project
+### 2. Use This in Your Project
 
-To use any font in your own project, simply:
+Fontly is designed to be a high-performance CDN for your font assets. Here are examples of how to integrate a font like **Glorida Black** into various project types.
 
-1.  **Copy the CSS:** In the Fontly app, click the **"Show CSS"** button for your desired font and use the **"Copy CSS"** button.
-2.  **Paste the CSS:** Paste the copied `@font-face` block into your project's main CSS file.
-3.  **Apply the Font:** Use the `font-family` name in your CSS:
+#### A. Pure HTML/CSS
 
+The most straightforward way is to use the `@font-face` rule you copy from the app, and then apply the font-family in your CSS.
+
+**`styles.css`**
 ```css
-/* Example of copied @font-face code */
+/* 1. Paste the @font-face rule (copied from the Fontly app) */
 @font-face {
-  font-family: 'Angelbanditdemoregular';
-  src: url('https://fontly-virid.vercel.app/fonts/ttf/AngelBanditDemoRegular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Glorida Black';
+  src: url('https://fontly-virid.vercel.app/fonts/ttf/Glorida-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
-/* Applying the font */
-.my-heading {
-  font-family: 'Angelbanditdemoregular', sans-serif;
+/* 2. Apply the font to an element */
+.header-text {
+  font-family: 'Glorida Black', sans-serif;
+  font-size: 48px;
 }
 ```
 
-### 3. Clone and Contribute
+#### B. React / Vue (Component-Based)
+
+In modern component-based frameworks, you typically import your global styles (which contain the `@font-face` rule) once, and then use the font-family name in your component styles.
+
+**`App.css` (or global styles)**
+```css
+/* Paste the @font-face rule here once */
+@font-face {
+  font-family: 'Glorida Black';
+  src: url('https://fontly-virid.vercel.app/fonts/ttf/Glorida-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+```
+
+**`Header.jsx` (React Component Example)**
+```jsx
+import React from 'react';
+import './App.css'; // Ensure global styles are imported
+
+const Header = () => {
+  const headerStyle = {
+    fontFamily: "'Glorida Black', sans-serif",
+    fontSize: '3rem',
+    color: '#FF6B6B',
+  };
+
+  return (
+    <h1 style={headerStyle}>
+      Fontly: Fast & Curated Fonts
+    </h1>
+  );
+};
+
+export default Header;
+```
+
 
 If you wish to clone the repository, modify the code, or add more fonts:
 
