@@ -1,0 +1,420 @@
+@font-face {
+    font-family: '110 Besmellah [Takmob.Net]';
+    src: url('./ttf/110_Besmellah_[Takmob.Net].TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AayatQuraan1 4vKB';
+    src: url('./ttf/AayatQuraan1-4vKB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AayatQuraan2 E6AW';
+    src: url('./ttf/AayatQuraan2-E6AW.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Al Majeed Quranic Font shiped';
+    src: url('./ttf/Al Majeed Quranic Font_shiped.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AligarhArabicFREEPERSONALUSE';
+    src: url('./otf/AligarhArabicFREEPERSONALUSE-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlladhinaDemo OVwZ8';
+    src: url('./otf/AlladhinaDemo-OVwZ8.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahMuhammad2022 axnpx';
+    src: url('./ttf/AllahMuhammad2022-axnpx.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahMuhammad2022 eZ81n';
+    src: url('./ttf/AllahMuhammad2022-eZ81n.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahMuhammadColor EaxJ4';
+    src: url('./ttf/AllahMuhammadColor-EaxJ4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahMuhammadColor2 OVxAA';
+    src: url('./ttf/AllahMuhammadColor2-OVxAA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahMuhammadColor3 ZVxEJ';
+    src: url('./ttf/AllahMuhammadColor3-ZVxEJ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahMuhammadColor4 3zVaZ';
+    src: url('./ttf/AllahMuhammadColor4-3zVaZ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahNames3 4BZn9';
+    src: url('./ttf/AllahNames3-4BZn9.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahNames4 ow1vV';
+    src: url('./ttf/AllahNames4-ow1vV.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahNames99 0Wav4';
+    src: url('./ttf/AllahNames99-0Wav4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AllahNamesColor gxpwY';
+    src: url('./ttf/AllahNamesColor-gxpwY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArabQuranIslamic140 K7n4W';
+    src: url('./ttf/ArabQuranIslamic140-K7n4W.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArabQuranIslamic140 vnmnZ';
+    src: url('./ttf/ArabQuranIslamic140-vnmnZ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Asyatupersonaluse';
+    src: url('./otf/Asyatupersonaluse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BundeyScriptPersonalUseBold qZaKx';
+    src: url('./otf/BundeyScriptPersonalUseBold-qZaKx.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BundeyScriptPersonalUseBoldItalic DO7dd';
+    src: url('./otf/BundeyScriptPersonalUseBoldItalic-DO7dd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BundeyScriptPersonalUseItalic p7WoR';
+    src: url('./otf/BundeyScriptPersonalUseItalic-p7WoR.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BundeyScriptPersonalUseRegular AL20x';
+    src: url('./otf/BundeyScriptPersonalUseRegular-AL20x.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo';
+    src: url('./ttf/Cairo-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ElMessiri';
+    src: url('./ttf/ElMessiri-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Faradisa DEMO';
+    src: url('./otf/Faradisa DEMO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FelicitationArabicRamadan WalO';
+    src: url('./ttf/FelicitationArabicRamadan-WalO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAllahNames1 EaGJ4';
+    src: url('./ttf/FontAllahNames1-EaGJ4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAllahNames2 ZVGEJ';
+    src: url('./ttf/FontAllahNames2-ZVGEJ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAllahNames2 eZp9x';
+    src: url('./ttf/FontAllahNames2-eZp9x.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAllahNames99 axApx';
+    src: url('./ttf/FontAllahNames99-axApx.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Harmattan';
+    src: url('./ttf/Harmattan-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IslamicIcons600 3lKBX';
+    src: url('./ttf/IslamicIcons600-3lKBX.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemonada';
+    src: url('./ttf/Lemonada-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LutfeyArabicDEMO';
+    src: url('./otf/LutfeyArabicDEMO-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LutfeyArabicDEMO Outline';
+    src: url('./otf/LutfeyArabicDEMO-Outline.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mada';
+    src: url('./ttf/Mada-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MeilaArabicDEMO LineBold';
+    src: url('./otf/MeilaArabicDEMO-LineBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MeilaArabicDEMO LineLight';
+    src: url('./otf/MeilaArabicDEMO-LineLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MeilaArabicDEMO LineRegular';
+    src: url('./otf/MeilaArabicDEMO-LineRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MeilaArabicDEMO Solid';
+    src: url('./otf/MeilaArabicDEMO-Solid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MohammadRasoolAllah1445 5y1aa';
+    src: url('./ttf/MohammadRasoolAllah1445-5y1aa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mushym';
+    src: url('./ttf/Mushym-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MustaqimDemo Yq82y';
+    src: url('./ttf/MustaqimDemo-Yq82y.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MustaqimDemo rvVn8';
+    src: url('./otf/MustaqimDemo-rvVn8.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palestine1445 3zWg3';
+    src: url('./ttf/Palestine1445-3zWg3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuranSurah01 w1yO6';
+    src: url('./ttf/QuranSurah01-w1yO6.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuranSurah02 d9lVZ';
+    src: url('./ttf/QuranSurah02-d9lVZ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuranSurah1 mLKO5';
+    src: url('./ttf/QuranSurah1-mLKO5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuranSurah2 7Bov4';
+    src: url('./ttf/QuranSurah2-7Bov4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SabilyRegular m21x5';
+    src: url('./ttf/SabilyRegular-m21x5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sabiyah3D DYzZm';
+    src: url('./ttf/Sabiyah3D-DYzZm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sabiyah3D pgV1a';
+    src: url('./otf/Sabiyah3D-pgV1a.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SabiyahRegular ARza2';
+    src: url('./ttf/SabiyahRegular-ARza2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SabiyahRegular q2VRl';
+    src: url('./otf/SabiyahRegular-q2VRl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SatimahRegular OGo0A';
+    src: url('./ttf/SatimahRegular-OGo0A.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SaudiArabiaPersonalUse j92a9';
+    src: url('./ttf/SaudiArabiaPersonalUse-j92a9.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url('./ttf/Tajawal-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mushym.regular';
+    src: url('./ttf/mushym.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ramis arabic.medium';
+    src: url('./otf/ramis-arabic-trial.medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
