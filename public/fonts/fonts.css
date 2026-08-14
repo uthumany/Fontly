@@ -591,6 +591,22 @@
 }
 
 @font-face {
+    font-family: "Corpta Demo";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/corpta-demo.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cosmo";
+    src: url("https://fontly-virid.vercel.app/fonts/otf/cosmo.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Dalfitra";
     src: url("https://fontly-virid.vercel.app/fonts/otf/dalfitra.otf") format("opentype");
     font-weight: normal;
