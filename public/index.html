@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Fontly - Interactive Font Preview Gallery with 95 Premium Fonts">
+    <meta name="description" content="Fontly - Advanced Font Preview Gallery with 245+ Premium Fonts">
     <title>Fontly - Font Preview Gallery</title>
-    <link rel="manifest" href="/manifest.json">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23FF6B6B'>F</text></svg>">
-    <link rel="preconnect" href="https://fontly-virid.vercel.app">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --bg-primary: #ffffff;
             --bg-secondary: #f8f9fa;
@@ -29,10 +22,7 @@
             --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
             --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
             --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
-            --glass-bg: rgba(255, 255, 255, 0.7);
-            --glass-border: rgba(255, 255, 255, 0.3);
         }
-
         body.dark-mode {
             --bg-primary: #0f0f0f;
             --bg-secondary: #1a1a1a;
@@ -43,2300 +33,362 @@
             --border-color: #333333;
             --accent-color: #FF8A8A;
             --accent-light: #4d2626;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
-            --glass-bg: rgba(26, 26, 26, 0.7);
-            --glass-border: rgba(255, 255, 255, 0.1);
         }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
             color: var(--text-primary);
-            transition: background 0.3s ease, color 0.3s ease;
+            transition: all 0.3s ease;
             min-height: 100vh;
         }
-
-        /* Header */
         header {
             position: sticky;
             top: 0;
             z-index: 100;
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--glass-border);
-            padding: 16px 20px;
-            box-shadow: var(--shadow-md);
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow-sm);
         }
-
         .header-content {
             max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            gap: 1rem;
         }
-
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
+        .logo-section { display: flex; align-items: center; gap: 0.8rem; }
         .logo {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 24px;
-            box-shadow: var(--shadow-md);
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        .stats {
-            font-size: 14px;
-            color: var(--text-secondary);
-            padding: 4px 12px;
-            background: var(--accent-light);
-            border-radius: 20px;
-            font-weight: 600;
-        }
-
-        .header-controls {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        button {
-            padding: 10px 16px;
-            border: none;
+            width: 40px; height: 40px;
+            background: var(--accent-color);
             border-radius: 8px;
-            background-color: var(--accent-color);
-            color: white;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            box-shadow: var(--shadow-sm);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: bold; font-size: 1.5rem;
         }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        button:active {
-            transform: translateY(0);
-        }
-
-        /* Control Panel */
-        .control-panel {
-            max-width: 1400px;
-            margin: 20px auto;
-            padding: 20px;
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-        }
-
-        .control-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .control-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .control-group label {
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .control-group input[type="text"],
-        .control-group input[type="number"] {
-            padding: 10px 12px;
+        .controls { display: flex; gap: 0.5rem; }
+        button, select {
+            padding: 0.6rem 1rem;
             border: 1px solid var(--border-color);
             border-radius: 6px;
-            background-color: var(--bg-primary);
+            background: var(--bg-secondary);
             color: var(--text-primary);
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .control-group input[type="text"]:focus,
-        .control-group input[type="number"]:focus {
-            outline: none;
-            border-color: var(--accent-color);
-            box-shadow: 0 0 0 3px var(--accent-light);
-        }
-
-        .size-control {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
-        .size-control input[type="range"] {
-            flex: 1;
-            height: 6px;
-            border-radius: 3px;
-            background: var(--border-color);
-            outline: none;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-
-        .size-control input[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: var(--accent-color);
             cursor: pointer;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .size-control input[type="range"]::-moz-range-thumb {
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: var(--accent-color);
-            cursor: pointer;
-            border: none;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .size-display {
-            min-width: 50px;
-            text-align: right;
+            font-size: 0.9rem;
             font-weight: 600;
-            color: var(--accent-color);
+            transition: all 0.2s;
         }
-
-        /* Filter Badges */
-        .filter-section {
+        button:hover, select:hover { border-color: var(--accent-color); }
+        button.active { background: var(--accent-color); color: white; border-color: var(--accent-color); }
+        
+        .main-container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        
+        .filter-panel {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            align-items: center;
+            flex-direction: column;
+            gap: 1.5rem;
         }
-
-        .filter-label {
-            font-size: 13px;
-            font-weight: 700;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+        .search-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; }
+        .input-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        .input-group label { font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; }
+        input[type="text"], input[type="number"] {
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
         }
-
-        .filter-badge {
-            padding: 6px 14px;
-            border: 2px solid var(--border-color);
+        .filter-row { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; }
+        .badge {
+            padding: 0.4rem 1rem;
             border-radius: 20px;
-            background: transparent;
-            color: var(--text-primary);
+            font-size: 0.85rem;
+            background: var(--bg-tertiary);
             cursor: pointer;
-            font-size: 13px;
-            font-weight: 600;
-            transition: all 0.3s ease;
+            border: 1px solid transparent;
         }
-
-        .filter-badge:hover {
-            border-color: var(--accent-color);
-            color: var(--accent-color);
-        }
-
-        .filter-badge.active {
-            background: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
-        }
-
-        /* Gallery */
-        .gallery-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+        .badge.active { background: var(--accent-color); color: white; }
+        .badge span { opacity: 0.7; font-size: 0.75rem; margin-left: 4px; }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
         }
-
-        .gallery.list-view {
-            grid-template-columns: 1fr;
-        }
-
+        .gallery.list-view { grid-template-columns: 1fr; }
+        
         .font-card {
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
             border-radius: 12px;
-            padding: 20px;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-sm);
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            padding: 1.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
-        .font-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--accent-color);
-        }
-
-        .font-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 12px;
-        }
-
-        .font-name {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--text-primary);
-            flex: 1;
-        }
-
-        .font-meta {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            padding: 3px 8px;
-            background: var(--accent-light);
-            color: var(--accent-color);
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .font-preview {
-            font-size: 32px;
-            line-height: 1.6;
-            padding: 15px;
+        .font-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .font-info { display: flex; justify-content: space-between; margin-bottom: 1rem; }
+        .font-name { font-weight: 700; font-size: 1.1rem; }
+        .font-tags { display: flex; gap: 0.4rem; }
+        .tag { padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; background: var(--accent-light); color: var(--accent-color); }
+        
+        .preview-box {
             background: var(--bg-primary);
+            padding: 1.5rem;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            word-break: break-word;
-            min-height: 100px;
-            max-height: 150px;
-            overflow-y: auto;
-        }
-
-        .font-controls {
+            margin-bottom: 1rem;
+            min-height: 120px;
             display: flex;
-            gap: 12px;
             align-items: center;
-            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
         }
-
-        .font-controls .size-control {
-            flex: 1;
-            min-width: 150px;
-        }
-
-        .code-section {
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .code-toggle {
-            background: var(--bg-tertiary);
-            color: var(--text-primary);
-            padding: 8px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .code-toggle:hover {
-            background: var(--accent-light);
-            color: var(--accent-color);
-        }
-
-        .code-block {
-            display: none;
-            margin-top: 12px;
-            padding: 12px;
+        
+        mark { background: #ffeb3b; color: black; padding: 0 2px; border-radius: 2px; }
+        
+        .loading-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: var(--bg-primary);
-            border-radius: 6px;
-            border: 1px solid var(--border-color);
-            overflow-x: auto;
+            display: flex; align-items: center; justify-content: center;
+            z-index: 1000; transition: opacity 0.5s;
         }
+        .loading-overlay.hidden { opacity: 0; pointer-events: none; }
+        
+        .perf-info { font-size: 0.75rem; color: var(--text-tertiary); margin-top: 1rem; text-align: center; }
 
-        .code-block.show {
-            display: block;
-        }
-
-        .code-block code {
-            font-family: 'Monaco', 'Courier New', monospace;
-            font-size: 12px;
-            color: var(--text-secondary);
-            line-height: 1.5;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-
-        .copy-btn {
-            padding: 6px 12px;
-            font-size: 12px;
-            margin-top: 8px;
-        }
-
-        /* Toast Notifications */
-        .toast {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--accent-color);
-            color: white;
-            padding: 14px 20px;
-            border-radius: 8px;
-            box-shadow: var(--shadow-lg);
-            z-index: 1000;
-            animation: slideIn 0.3s ease;
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateX(400px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        /* Empty State */
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
-            color: var(--text-secondary);
-        }
-
-        .empty-state h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            header {
-                padding: 12px 16px;
-            }
-
-            .header-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .control-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .font-preview {
-                font-size: 24px;
-                min-height: 80px;
-            }
-
-            .control-panel {
-                margin: 16px;
-                padding: 16px;
-            }
-
-            .gallery-container {
-                padding: 16px;
-            }
-        }
-
-        /* Accessibility */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-
-        button:focus,
-        input:focus {
-            outline: 2px solid var(--accent-color);
-            outline-offset: 2px;
-        }
-
-        /* Loading State */
-        .loading {
-            display: none;
-            text-align: center;
-            padding: 40px;
-            color: var(--text-secondary);
-        }
-
-        .loading.show {
-            display: block;
-        }
-
-        .spinner {
-            border: 4px solid var(--border-color);
-            border-top: 4px solid var(--accent-color);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            .search-row { grid-template-columns: 1fr; }
+            .header-content { flex-direction: column; }
         }
     </style>
 </head>
 <body>
+    <div id="loading" class="loading-overlay">
+        <div class="logo">F</div>
+    </div>
+
     <header>
         <div class="header-content">
             <div class="logo-section">
                 <div class="logo">F</div>
                 <div>
                     <h1>Fontly</h1>
-                    <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Font Preview Gallery</p>
+                    <p style="font-size: 0.7rem; color: var(--text-secondary);">Premium Font Explorer</p>
                 </div>
             </div>
-            <div class="stats" id="stats">0/0 Fonts</div>
-            <div class="header-controls">
-                <button id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
-                <button id="viewToggle" aria-label="Toggle view mode">📋 List</button>
-                <button id="resetBtn" aria-label="Reset all settings">↻ Reset</button>
+            <div id="stats" class="badge active">0/0 Fonts</div>
+            <div class="controls">
+                <button id="themeToggle">🌙 Dark</button>
+                <button id="viewToggle">📋 List</button>
+                <button id="resetBtn">↻ Reset</button>
             </div>
         </div>
     </header>
 
-    <div class="control-panel">
-        <div class="control-grid">
-            <div class="control-group">
-                <label for="searchInput">🔍 Search Fonts</label>
-                <input type="text" id="searchInput" placeholder="Search by name..." aria-label="Search fonts">
-            </div>
-            <div class="control-group">
-                <label for="textInput">✏️ Custom Text</label>
-                <input type="text" id="textInput" placeholder="Enter custom text..." value="The quick brown fox jumps over the lazy dog" aria-label="Custom preview text">
-            </div>
-            <div class="control-group">
-                <label>📏 Global Size</label>
-                <div class="size-control">
-                    <input type="range" id="globalSize" min="12" max="72" value="32" aria-label="Global font size">
-                    <span class="size-display" id="globalSizeDisplay">32px</span>
+    <main class="main-container">
+        <div class="filter-panel">
+            <div class="search-row">
+                <div class="input-group">
+                    <label>🔍 Search Fonts</label>
+                    <input type="text" id="searchInput" placeholder="Search by name or category...">
+                </div>
+                <div class="input-group">
+                    <label>✏️ Custom Text</label>
+                    <input type="text" id="textInput" placeholder="Preview text..." value="The quick brown fox jumps over the lazy dog">
+                </div>
+                <div class="input-group">
+                    <label>📏 Sort By</label>
+                    <select id="sortSelect">
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="format">Format (OTF/TTF)</option>
+                    </select>
                 </div>
             </div>
+            <div class="filter-row" id="categoryFilters">
+                <span class="filter-label">Categories:</span>
+                <button class="badge active" data-category="all">All <span></span></button>
+                <!-- Categories will be injected here -->
+            </div>
         </div>
 
-        <div class="filter-section">
-            <span class="filter-label">📂 Categories:</span>
-            <button class="filter-badge active" data-filter="all">All</button>
-            <button class="filter-badge" data-filter="serif">Serif</button>
-            <button class="filter-badge" data-filter="sans-serif">Sans-serif</button>
-            <button class="filter-badge" data-filter="display">Display</button>
-            <button class="filter-badge" data-filter="script">Script</button>
-            <button class="filter-badge" data-filter="decorative">Decorative</button>
-            <button class="filter-badge" data-filter="3d">3D</button>
-        </div>
-    </div>
-
-    <div class="gallery-container">
-        <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <p>Loading fonts...</p>
-        </div>
-        <div class="gallery" id="gallery"></div>
-        <div class="empty-state" id="emptyState" style="display: none;">
+        <div id="gallery" class="gallery"></div>
+        <div id="emptyState" style="display: none; text-align: center; padding: 3rem;">
             <h2>No fonts found</h2>
             <p>Try adjusting your search or filters</p>
         </div>
-    </div>
+        
+        <div class="perf-info" id="perfInfo"></div>
+    </main>
 
     <script>
-        // Font data - will be populated dynamically
         let allFonts = [];
         let filteredFonts = [];
-        let currentFilter = 'all';
+        let currentCategory = 'all';
         let isDarkMode = localStorage.getItem('darkMode') === 'true';
         let isListView = localStorage.getItem('listView') === 'true';
-        let globalSize = parseInt(localStorage.getItem('globalSize')) || 32;
 
-        // Initialize theme
-        if (isDarkMode) {
-            document.body.classList.add('dark-mode');
-            document.getElementById('themeToggle').textContent = '☀️ Light';
-        }
+        // Initialize UI
+        if (isDarkMode) document.body.classList.add('dark-mode');
+        if (isListView) document.getElementById('gallery').classList.add('list-view');
 
-        // Initialize view
-        if (isListView) {
-            document.getElementById('gallery').classList.add('list-view');
-            document.getElementById('viewToggle').textContent = '🔲 Grid';
-        }
-
-        // Debounce function for input handling
-        function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        }
-
-        function determineFontCategory(filename) {
-            const name = filename.toLowerCase();
-            if (name.includes('serif') || name.includes('garamond') || name.includes('ebgaramond')) return 'serif';
-            if (name.includes('sans') || name.includes('goodly') || name.includes('glorida')) return 'sans-serif';
-            if (name.includes('display') || name.includes('cinzel') || name.includes('beer')) return 'display';
-            if (name.includes('script') || name.includes('rockybilly') || name.includes('brush')) return 'script';
-            if (name.includes('3d') || name.includes('strenuous') || name.includes('armed')) return '3d';
-            if (name.includes('decorative') || name.includes('angel') || name.includes('kugile')) return 'decorative';
-            return 'decorative';
-        }
-
-        function generateFontList() {
-            // Hardcoded font list as fallback
-            const fontList = [
-
-                {
-                                "name": "110 Besmellah Takmob Net",
-                                "file": "/fonts/ttf/110-besmellah-takmob-net.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aayatquraan1 4Vkb",
-                                "file": "/fonts/ttf/aayatquraan1-4vkb.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aayatquraan2 E6Aw",
-                                "file": "/fonts/ttf/aayatquraan2-e6aw.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Al Majeed Quranic Font Shiped",
-                                "file": "/fonts/ttf/al-majeed-quranic-font-shiped.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Black",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-black.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Bold",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-bold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Extrabold",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-extrabold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Extralight",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-extralight.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Light",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-light.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Medium",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-medium.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Regular",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Semibold",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-semibold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Aligarharabicfreepersonaluse Thin",
-                                "file": "/fonts/otf/aligarharabicfreepersonaluse-thin.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Alladhinademo Ovwz8",
-                                "file": "/fonts/otf/alladhinademo-ovwz8.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahmuhammad2022 Axnpx",
-                                "file": "/fonts/ttf/allahmuhammad2022-axnpx.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahmuhammad2022 Ez81N",
-                                "file": "/fonts/ttf/allahmuhammad2022-ez81n.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahmuhammadcolor Eaxj4",
-                                "file": "/fonts/ttf/allahmuhammadcolor-eaxj4.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahmuhammadcolor2 Ovxaa",
-                                "file": "/fonts/ttf/allahmuhammadcolor2-ovxaa.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahmuhammadcolor3 Zvxej",
-                                "file": "/fonts/ttf/allahmuhammadcolor3-zvxej.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahmuhammadcolor4 3Zvaz",
-                                "file": "/fonts/ttf/allahmuhammadcolor4-3zvaz.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahnames3 4Bzn9",
-                                "file": "/fonts/ttf/allahnames3-4bzn9.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahnames4 Ow1Vv",
-                                "file": "/fonts/ttf/allahnames4-ow1vv.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahnames99 0Wav4",
-                                "file": "/fonts/ttf/allahnames99-0wav4.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Allahnamescolor Gxpwy",
-                                "file": "/fonts/ttf/allahnamescolor-gxpwy.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Angelbanditdemoregular",
-                                "file": "/fonts/ttf/angelbanditdemoregular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Antiquestories",
-                                "file": "/fonts/otf/antiquestories.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Arabquranislamic140 K7N4W",
-                                "file": "/fonts/ttf/arabquranislamic140-k7n4w.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Arabquranislamic140 Vnmnz",
-                                "file": "/fonts/ttf/arabquranislamic140-vnmnz.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightning",
-                                "file": "/fonts/ttf/armedlightning.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightning3D",
-                                "file": "/fonts/ttf/armedlightning3d.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightning3Dital",
-                                "file": "/fonts/ttf/armedlightning3dital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningacad",
-                                "file": "/fonts/ttf/armedlightningacad.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningacadital",
-                                "file": "/fonts/ttf/armedlightningacadital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningchrome",
-                                "file": "/fonts/ttf/armedlightningchrome.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningchromeitalic",
-                                "file": "/fonts/ttf/armedlightningchromeitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningcond",
-                                "file": "/fonts/ttf/armedlightningcond.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningcondital",
-                                "file": "/fonts/ttf/armedlightningcondital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningexpand",
-                                "file": "/fonts/ttf/armedlightningexpand.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningexpandital",
-                                "file": "/fonts/ttf/armedlightningexpandital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightninggrad",
-                                "file": "/fonts/ttf/armedlightninggrad.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightninggraditalic",
-                                "file": "/fonts/ttf/armedlightninggraditalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightninghalf",
-                                "file": "/fonts/ttf/armedlightninghalf.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightninghalfitalic",
-                                "file": "/fonts/ttf/armedlightninghalfitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningitalic",
-                                "file": "/fonts/ttf/armedlightningitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightninglaser",
-                                "file": "/fonts/ttf/armedlightninglaser.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightninglaseritalic",
-                                "file": "/fonts/ttf/armedlightninglaseritalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningleft",
-                                "file": "/fonts/ttf/armedlightningleft.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningsemital",
-                                "file": "/fonts/ttf/armedlightningsemital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningsquared",
-                                "file": "/fonts/ttf/armedlightningsquared.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningsquaredital",
-                                "file": "/fonts/ttf/armedlightningsquaredital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningsquaredsemital",
-                                "file": "/fonts/ttf/armedlightningsquaredsemital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningsquaredsuperital",
-                                "file": "/fonts/ttf/armedlightningsquaredsuperital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningsuperital",
-                                "file": "/fonts/ttf/armedlightningsuperital.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningtitle",
-                                "file": "/fonts/ttf/armedlightningtitle.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Armedlightningtitleitalic",
-                                "file": "/fonts/ttf/armedlightningtitleitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Asyatupersonaluse",
-                                "file": "/fonts/otf/asyatupersonaluse.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ballmain",
-                                "file": "/fonts/ttf/ballmain.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Bastliga One",
-                                "file": "/fonts/ttf/bastliga-one.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Benyoritha G334D",
-                                "file": "/fonts/otf/benyoritha-g334d.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Bidenatrial",
-                                "file": "/fonts/ttf/bidenatrial.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Bundeyscriptpersonalusebold Qzakx",
-                                "file": "/fonts/otf/bundeyscriptpersonalusebold-qzakx.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Bundeyscriptpersonalusebolditalic Do7Dd",
-                                "file": "/fonts/otf/bundeyscriptpersonalusebolditalic-do7dd.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Bundeyscriptpersonaluseitalic P7Wor",
-                                "file": "/fonts/otf/bundeyscriptpersonaluseitalic-p7wor.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Bundeyscriptpersonaluseregular Al20X",
-                                "file": "/fonts/otf/bundeyscriptpersonaluseregular-al20x.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Black",
-                                "file": "/fonts/ttf/cairo-black.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Bold",
-                                "file": "/fonts/ttf/cairo-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Extrabold",
-                                "file": "/fonts/ttf/cairo-extrabold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Extralight",
-                                "file": "/fonts/ttf/cairo-extralight.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Light",
-                                "file": "/fonts/ttf/cairo-light.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Medium",
-                                "file": "/fonts/ttf/cairo-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Regular",
-                                "file": "/fonts/ttf/cairo-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Semibold",
-                                "file": "/fonts/ttf/cairo-semibold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cairo Variablefont Slnt Wght",
-                                "file": "/fonts/ttf/cairo-variablefont-slnt-wght.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Chiralla Vgw9Y",
-                                "file": "/fonts/otf/chiralla-vgw9y.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cinzeldecorative Black",
-                                "file": "/fonts/otf/cinzeldecorative-black.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cinzeldecorative Bold",
-                                "file": "/fonts/ttf/cinzeldecorative-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cinzeldecorative Regular",
-                                "file": "/fonts/ttf/cinzeldecorative-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Corpta Demo",
-                                "file": "/fonts/otf/corpta-demo.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Cosmo",
-                                "file": "/fonts/otf/cosmo.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Dalfitra",
-                                "file": "/fonts/ttf/dalfitra.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Danymeka Lxx2D",
-                                "file": "/fonts/otf/danymeka-lxx2d.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Eaglehorizonp",
-                                "file": "/fonts/ttf/eaglehorizonp.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond Initials",
-                                "file": "/fonts/ttf/ebgaramond-initials.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond Initialsf1",
-                                "file": "/fonts/ttf/ebgaramond-initialsf1.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond Initialsf2",
-                                "file": "/fonts/ttf/ebgaramond-initialsf2.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond08 Italic",
-                                "file": "/fonts/ttf/ebgaramond08-italic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond08 Regular",
-                                "file": "/fonts/ttf/ebgaramond08-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond12 Allsc",
-                                "file": "/fonts/ttf/ebgaramond12-allsc.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond12 Italic",
-                                "file": "/fonts/ttf/ebgaramond12-italic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramond12 Regular",
-                                "file": "/fonts/ttf/ebgaramond12-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramondsc08 Regular",
-                                "file": "/fonts/ttf/ebgaramondsc08-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ebgaramondsc12 Regular",
-                                "file": "/fonts/ttf/ebgaramondsc12-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Elmessiri Bold",
-                                "file": "/fonts/ttf/elmessiri-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Elmessiri Medium",
-                                "file": "/fonts/ttf/elmessiri-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Elmessiri Regular",
-                                "file": "/fonts/ttf/elmessiri-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Elmessiri Semibold",
-                                "file": "/fonts/ttf/elmessiri-semibold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Elmessiri Variablefont Wght",
-                                "file": "/fonts/ttf/elmessiri-variablefont-wght.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Faradisa Demo",
-                                "file": "/fonts/otf/faradisa-demo.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Felicitationarabicramadan Walo",
-                                "file": "/fonts/ttf/felicitationarabicramadan-walo.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Flavia",
-                                "file": "/fonts/otf/flavia.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Florals2",
-                                "file": "/fonts/ttf/florals2.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Fontallahnames1 Eagj4",
-                                "file": "/fonts/ttf/fontallahnames1-eagj4.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Fontallahnames2 Ezp9X",
-                                "file": "/fonts/ttf/fontallahnames2-ezp9x.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Fontallahnames2 Zvgej",
-                                "file": "/fonts/ttf/fontallahnames2-zvgej.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Fontallahnames99 Axapx",
-                                "file": "/fonts/ttf/fontallahnames99-axapx.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Geraldine Personal Use",
-                                "file": "/fonts/ttf/geraldine-personal-use.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ghostlikedemooutline",
-                                "file": "/fonts/ttf/ghostlikedemooutline.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ghostlikedemoregular",
-                                "file": "/fonts/ttf/ghostlikedemoregular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Black",
-                                "file": "/fonts/ttf/glorida-black.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Blackitalic",
-                                "file": "/fonts/ttf/glorida-blackitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Bold",
-                                "file": "/fonts/ttf/glorida-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Bolditalic",
-                                "file": "/fonts/ttf/glorida-bolditalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Extrabold",
-                                "file": "/fonts/ttf/glorida-extrabold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Extrabolditalic",
-                                "file": "/fonts/ttf/glorida-extrabolditalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Extralight",
-                                "file": "/fonts/ttf/glorida-extralight.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Extralightitalic",
-                                "file": "/fonts/ttf/glorida-extralightitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Italic",
-                                "file": "/fonts/ttf/glorida-italic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Light",
-                                "file": "/fonts/ttf/glorida-light.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Lightitalic",
-                                "file": "/fonts/ttf/glorida-lightitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Medium",
-                                "file": "/fonts/ttf/glorida-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Mediumitalic",
-                                "file": "/fonts/ttf/glorida-mediumitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Regular",
-                                "file": "/fonts/ttf/glorida-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Semibold",
-                                "file": "/fonts/ttf/glorida-semibold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Semibolditalic",
-                                "file": "/fonts/ttf/glorida-semibolditalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Thin",
-                                "file": "/fonts/ttf/glorida-thin.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Glorida Thinitalic",
-                                "file": "/fonts/ttf/glorida-thinitalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Goodly Bold",
-                                "file": "/fonts/otf/goodly-bold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Goodly Extralight",
-                                "file": "/fonts/otf/goodly-extralight.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Goodly Light",
-                                "file": "/fonts/otf/goodly-light.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Goodly Medium",
-                                "file": "/fonts/otf/goodly-medium.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Goodly Regular",
-                                "file": "/fonts/otf/goodly-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Goodly Semibold",
-                                "file": "/fonts/otf/goodly-semibold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Harirayaarabic Regular",
-                                "file": "/fonts/otf/harirayaarabic-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Harmattan Bold",
-                                "file": "/fonts/ttf/harmattan-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Harmattan Medium",
-                                "file": "/fonts/ttf/harmattan-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Harmattan Regular",
-                                "file": "/fonts/ttf/harmattan-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Harmattan Semibold",
-                                "file": "/fonts/ttf/harmattan-semibold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Herlora Floral Dingbat",
-                                "file": "/fonts/ttf/herlora-floral-dingbat.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Hiragenda",
-                                "file": "/fonts/ttf/hiragenda.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Islamicicons600 3Lkbx",
-                                "file": "/fonts/ttf/islamicicons600-3lkbx.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Kabisat Demo Italic Tall",
-                                "file": "/fonts/ttf/kabisat-demo-italic-tall.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Kugile Demo",
-                                "file": "/fonts/ttf/kugile-demo.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Kugile Regular",
-                                "file": "/fonts/ttf/kugile-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Kultum Ramadhan",
-                                "file": "/fonts/otf/kultum-ramadhan.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lasthen",
-                                "file": "/fonts/ttf/lasthen.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Leaguespartan Bold",
-                                "file": "/fonts/otf/leaguespartan-bold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lemonada Bold",
-                                "file": "/fonts/ttf/lemonada-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lemonada Light",
-                                "file": "/fonts/ttf/lemonada-light.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lemonada Medium",
-                                "file": "/fonts/ttf/lemonada-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lemonada Regular",
-                                "file": "/fonts/ttf/lemonada-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lemonada Semibold",
-                                "file": "/fonts/ttf/lemonada-semibold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lemonada Variablefont Wght",
-                                "file": "/fonts/ttf/lemonada-variablefont-wght.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lora Bold",
-                                "file": "/fonts/ttf/lora-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lora Bolditalic",
-                                "file": "/fonts/ttf/lora-bolditalic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lora Italic",
-                                "file": "/fonts/ttf/lora-italic.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lora Regular",
-                                "file": "/fonts/ttf/lora-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lutfeyarabicdemo Outline",
-                                "file": "/fonts/otf/lutfeyarabicdemo-outline.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Lutfeyarabicdemo Regular",
-                                "file": "/fonts/otf/lutfeyarabicdemo-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Black",
-                                "file": "/fonts/ttf/mada-black.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Bold",
-                                "file": "/fonts/ttf/mada-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Extrabold",
-                                "file": "/fonts/ttf/mada-extrabold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Extralight",
-                                "file": "/fonts/ttf/mada-extralight.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Light",
-                                "file": "/fonts/ttf/mada-light.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Medium",
-                                "file": "/fonts/ttf/mada-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Regular",
-                                "file": "/fonts/ttf/mada-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Semibold",
-                                "file": "/fonts/ttf/mada-semibold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mada Variablefont Wght",
-                                "file": "/fonts/ttf/mada-variablefont-wght.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Marchevoked Demo",
-                                "file": "/fonts/otf/marchevoked-demo.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Marhabanarabicdemo Bold",
-                                "file": "/fonts/otf/marhabanarabicdemo-bold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Marhabanarabicdemo Boldoblique",
-                                "file": "/fonts/otf/marhabanarabicdemo-boldoblique.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Meilaarabicdemo Linebold",
-                                "file": "/fonts/otf/meilaarabicdemo-linebold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Meilaarabicdemo Linelight",
-                                "file": "/fonts/otf/meilaarabicdemo-linelight.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Meilaarabicdemo Lineregular",
-                                "file": "/fonts/otf/meilaarabicdemo-lineregular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Meilaarabicdemo Solid",
-                                "file": "/fonts/otf/meilaarabicdemo-solid.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mileast",
-                                "file": "/fonts/otf/mileast.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mileast Italic",
-                                "file": "/fonts/otf/mileast-italic.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Milkyway Demo",
-                                "file": "/fonts/ttf/milkyway-demo.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Modernline Personal Use Bold",
-                                "file": "/fonts/otf/modernline-personal-use-bold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Modernline Personal Use Regular",
-                                "file": "/fonts/otf/modernline-personal-use-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mohammadrasoolallah1445 5Y1Aa",
-                                "file": "/fonts/ttf/mohammadrasoolallah1445-5y1aa.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Molgan",
-                                "file": "/fonts/otf/molgan.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Moralana Demo",
-                                "file": "/fonts/otf/moralana-demo.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mushym Regular",
-                                "file": "/fonts/ttf/mushym-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mustaqimdemo Rvvn8",
-                                "file": "/fonts/otf/mustaqimdemo-rvvn8.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Mustaqimdemo Yq82Y",
-                                "file": "/fonts/ttf/mustaqimdemo-yq82y.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Nabana Shadow Bold",
-                                "file": "/fonts/ttf/nabana-shadow-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Naveidarabicdemo Extrabold",
-                                "file": "/fonts/otf/naveidarabicdemo-extrabold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Naveidarabicdemo Regular",
-                                "file": "/fonts/otf/naveidarabicdemo-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Naveidarabicdemo Thin",
-                                "file": "/fonts/otf/naveidarabicdemo-thin.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Nevera Regular",
-                                "file": "/fonts/otf/nevera-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Niconne Regular",
-                                "file": "/fonts/ttf/niconne-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Noctra Drip Outline Outline",
-                                "file": "/fonts/ttf/noctra-drip-outline-outline.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Noctra Drip Outline Outline 1",
-                                "file": "/fonts/ttf/noctra-drip-outline-outline-1.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Oliverra",
-                                "file": "/fonts/ttf/oliverra.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Orange Avenue Demo Outline",
-                                "file": "/fonts/otf/orange-avenue-demo-outline.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Orange Avenue Demo Regular",
-                                "file": "/fonts/otf/orange-avenue-demo-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Orangeavenuedemo Regular",
-                                "file": "/fonts/otf/orangeavenuedemo-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Orangeavenueoutlinedemo Regular",
-                                "file": "/fonts/otf/orangeavenueoutlinedemo-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Palestine1445 3Zwg3",
-                                "file": "/fonts/ttf/palestine1445-3zwg3.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Quransurah01 W1Yo6",
-                                "file": "/fonts/ttf/quransurah01-w1yo6.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Quransurah02 D9Lvz",
-                                "file": "/fonts/ttf/quransurah02-d9lvz.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Quransurah1 Mlko5",
-                                "file": "/fonts/ttf/quransurah1-mlko5.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Quransurah2 7Bov4",
-                                "file": "/fonts/ttf/quransurah2-7bov4.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ramis Arabic Trial Medium",
-                                "file": "/fonts/otf/ramis-arabic-trial-medium.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Richgold Bold",
-                                "file": "/fonts/otf/richgold-bold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Richgold Bold Italic",
-                                "file": "/fonts/otf/richgold-bold-italic.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Richgold Light",
-                                "file": "/fonts/otf/richgold-light.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Richgold Light Italic",
-                                "file": "/fonts/otf/richgold-light-italic.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Richgold Regular",
-                                "file": "/fonts/otf/richgold-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Richgold Regular Italic",
-                                "file": "/fonts/otf/richgold-regular-italic.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Rockybilly Regular",
-                                "file": "/fonts/ttf/rockybilly-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Rooster Personal Use",
-                                "file": "/fonts/ttf/rooster-personal-use.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Rostex Oblique",
-                                "file": "/fonts/ttf/rostex-oblique.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Rostex Obliqueoutline",
-                                "file": "/fonts/ttf/rostex-obliqueoutline.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Rostex Outline",
-                                "file": "/fonts/ttf/rostex-outline.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Rostex Regular",
-                                "file": "/fonts/ttf/rostex-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Routherghost",
-                                "file": "/fonts/otf/routherghost.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Runethia",
-                                "file": "/fonts/otf/runethia.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Rusticroadway",
-                                "file": "/fonts/otf/rusticroadway.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Ruttany",
-                                "file": "/fonts/otf/ruttany.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sabilyregular M21X5",
-                                "file": "/fonts/ttf/sabilyregular-m21x5.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sabiyah3D Dyzzm",
-                                "file": "/fonts/ttf/sabiyah3d-dyzzm.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sabiyah3D Pgv1A",
-                                "file": "/fonts/otf/sabiyah3d-pgv1a.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sabiyahregular Arza2",
-                                "file": "/fonts/ttf/sabiyahregular-arza2.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sabiyahregular Q2Vrl",
-                                "file": "/fonts/otf/sabiyahregular-q2vrl.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Satimahregular Ogo0A",
-                                "file": "/fonts/ttf/satimahregular-ogo0a.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Saudiarabiapersonaluse J92A9",
-                                "file": "/fonts/ttf/saudiarabiapersonaluse-j92a9.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sho Card Caps Regular",
-                                "file": "/fonts/ttf/sho-card-caps-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sho Card Caps Regular 2",
-                                "file": "/fonts/ttf/sho-card-caps-regular-2.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Strenuous 3D",
-                                "file": "/fonts/otf/strenuous-3d.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Sudegnakno4 Green Medium",
-                                "file": "/fonts/ttf/sudegnakno4-green-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Symphoniecalligraphydemo Regular",
-                                "file": "/fonts/otf/symphoniecalligraphydemo-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tajawal Black",
-                                "file": "/fonts/ttf/tajawal-black.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tajawal Bold",
-                                "file": "/fonts/ttf/tajawal-bold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tajawal Extrabold",
-                                "file": "/fonts/ttf/tajawal-extrabold.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tajawal Extralight",
-                                "file": "/fonts/ttf/tajawal-extralight.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tajawal Light",
-                                "file": "/fonts/ttf/tajawal-light.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tajawal Medium",
-                                "file": "/fonts/ttf/tajawal-medium.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tajawal Regular",
-                                "file": "/fonts/ttf/tajawal-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "The Beer Golden Palace",
-                                "file": "/fonts/ttf/the-beer-golden-palace.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Transcity Demo",
-                                "file": "/fonts/otf/transcity-demo.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Travailacharn Regular",
-                                "file": "/fonts/ttf/travailacharn-regular.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tufuliarabicdemo Bold",
-                                "file": "/fonts/otf/tufuliarabicdemo-bold.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Tufuliarabicdemo Regular",
-                                "file": "/fonts/otf/tufuliarabicdemo-regular.otf",
-                                "format": "opentype",
-                                "category": "decorative"
-                },
-                {
-                                "name": "Wertign Personaluseonly",
-                                "file": "/fonts/ttf/wertign-personaluseonly.ttf",
-                                "format": "truetype",
-                                "category": "decorative"
-                }
-            ];
-            return fontList;
-        }
-
-        function generateFontFaces() {
-            const style = document.createElement('style');
-            let fontFaceRules = '';
-            
-            allFonts.forEach((font, index) => {
-                fontFaceRules += `
+        async function init() {
+            try {
+                const response = await fetch('/fonts.json');
+                allFonts = await response.json();
+                
+                // Inject @font-face rules
+                const style = document.createElement('style');
+                style.textContent = allFonts.map((f, i) => `
                     @font-face {
-                        font-family: 'font-${index}';
-                        src: url("https://fontly-virid.vercel.app${font.file}") format("${font.format}");
+                        font-family: 'f-${i}';
+                        src: url("${f.file}") format("${f.format}");
                         font-display: swap;
                     }
-                `;
-            });
-            
-            style.textContent = fontFaceRules;
-            document.head.appendChild(style);
-        }
+                `).join('');
+                document.head.appendChild(style);
 
-        function filterAndRender() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            
-            filteredFonts = allFonts.filter(font => {
-                const matchesSearch = font.name.toLowerCase().includes(searchTerm);
-                const matchesFilter = currentFilter === 'all' || font.category === currentFilter;
-                return matchesSearch && matchesFilter;
-            });
-
-            updateStats();
-            renderGallery();
-        }
-
-        function updateStats() {
-            document.getElementById('stats').textContent = `${filteredFonts.length}/${allFonts.length} Fonts`;
-        }
-
-        function renderGallery() {
-            const gallery = document.getElementById('gallery');
-            const emptyState = document.getElementById('emptyState');
-            
-            if (filteredFonts.length === 0) {
-                gallery.innerHTML = '';
-                emptyState.style.display = 'block';
-                return;
+                renderCategories();
+                applyFilters();
+                
+                document.getElementById('loading').classList.add('hidden');
+                
+                // Show performance metrics
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        const nav = performance.getEntriesByType('navigation')[0];
+                        const fcp = performance.getEntriesByType('paint').find(p => p.name === 'first-contentful-paint')?.startTime;
+                        document.getElementById('perfInfo').textContent = 
+                            `FCP: ${Math.round(fcp)}ms | Load: ${Math.round(nav.loadEventEnd)}ms | Optimized by Vercel Edge`;
+                    }, 100);
+                });
+            } catch (e) {
+                console.error("Failed to load fonts", e);
             }
+        }
+
+        function renderCategories() {
+            const counts = allFonts.reduce((acc, f) => {
+                acc[f.category] = (acc[f.category] || 0) + 1;
+                return acc;
+            }, {});
             
-            emptyState.style.display = 'none';
-            gallery.innerHTML = filteredFonts.map((font, displayIndex) => {
-                const fontIndex = allFonts.indexOf(font);
+            const container = document.getElementById('categoryFilters');
+            const allSpan = container.querySelector('[data-category="all"] span');
+            allSpan.textContent = `(${allFonts.length})`;
+
+            Object.entries(counts).forEach(([cat, count]) => {
+                const btn = document.createElement('button');
+                btn.className = 'badge';
+                btn.dataset.category = cat;
+                btn.innerHTML = `${cat.charAt(0).toUpperCase() + cat.slice(1)} <span>(${count})</span>`;
+                btn.onclick = () => {
+                    document.querySelectorAll('.filter-row .badge').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentCategory = cat;
+                    applyFilters();
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function highlightMatch(text, query) {
+            if (!query) return text;
+            const regex = new RegExp(`(${query})`, 'gi');
+            return text.replace(regex, '<mark>$1</mark>');
+        }
+
+        function applyFilters() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const sort = document.getElementById('sortSelect').value;
+
+            filteredFonts = allFonts.filter(f => {
+                const matchesSearch = f.name.toLowerCase().includes(query) || f.category.toLowerCase().includes(query);
+                const matchesCat = currentCategory === 'all' || f.category === currentCategory;
+                return matchesSearch && matchesCat;
+            });
+
+            // Sort
+            filteredFonts.sort((a, b) => {
+                if (sort === 'name-asc') return a.name.localeCompare(b.name);
+                if (sort === 'name-desc') return b.name.localeCompare(a.name);
+                if (sort === 'format') return a.format.localeCompare(b.format);
+                return 0;
+            });
+
+            renderGallery(query);
+            document.getElementById('stats').textContent = `${filteredFonts.length}/${allFonts.length} Fonts`;
+            document.getElementById('emptyState').style.display = filteredFonts.length ? 'none' : 'block';
+        }
+
+        function renderGallery(query) {
+            const gallery = document.getElementById('gallery');
+            const customText = document.getElementById('textInput').value || "The quick brown fox jumps over the lazy dog";
+            
+            gallery.innerHTML = filteredFonts.map(f => {
+                const idx = allFonts.indexOf(f);
                 return `
                     <div class="font-card">
-                        <div class="font-header">
-                            <div class="font-name">${font.name}</div>
-                            <div class="font-meta">
-                                <span class="badge">${font.format === 'truetype' ? 'TTF' : 'OTF'}</span>
-                                <span class="badge">${font.category}</span>
+                        <div class="font-info">
+                            <div class="font-name">${highlightMatch(f.name, query)}</div>
+                            <div class="font-tags">
+                                <span class="tag">${f.format === 'truetype' ? 'TTF' : 'OTF'}</span>
+                                <span class="tag">${f.category}</span>
                             </div>
                         </div>
-                        <div class="font-preview" style="font-family: 'font-${fontIndex}'; font-size: ${globalSize}px;">
-                            ${document.getElementById('textInput').value || 'The quick brown fox jumps over the lazy dog'}
+                        <div class="preview-box" style="font-family: 'f-${idx}';">
+                            ${customText}
                         </div>
-                        <div class="font-controls">
-                            <div class="size-control" style="flex: 1;">
-                                <input type="range" min="12" max="72" value="${globalSize}" class="font-size-slider" data-index="${fontIndex}" aria-label="Font size for ${font.name}">
-                                <span class="size-display">${globalSize}px</span>
-                            </div>
-                        </div>
-                        <div class="code-section">
-                            <button class="code-toggle" data-index="${fontIndex}">📋 Show CSS</button>
-                            <div class="code-block" data-index="${fontIndex}">
-                                <code>@font-face {
-  font-family: "${font.name}";
-  src: url("https://fontly-virid.vercel.app${font.file}") format("${font.format}");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}</code>
-                                <button class="copy-btn" data-code="@font-face {
-  font-family: "${font.name}";
-  src: url("https://fontly-virid.vercel.app${font.file}") format("${font.format}");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}">📋 Copy CSS</button>
-                            </div>
+                        <div class="controls">
+                            <button onclick="copyCSS('${f.name}', '${f.file}', '${f.format}')">📋 Copy CSS</button>
                         </div>
                     </div>
                 `;
             }).join('');
-
-            // Add event listeners
-            document.querySelectorAll('.font-size-slider').forEach(slider => {
-                slider.addEventListener('input', (e) => {
-                    const index = parseInt(e.target.dataset.index);
-                    const size = e.target.value;
-                    const preview = e.target.closest('.font-card').querySelector('.font-preview');
-                    preview.style.fontSize = size + 'px';
-                    e.target.closest('.size-control').querySelector('.size-display').textContent = size + 'px';
-                });
-            });
-
-            document.querySelectorAll('.code-toggle').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const index = e.target.dataset.index;
-                    const codeBlock = document.querySelector(`.code-block[data-index="${index}"]`);
-                    codeBlock.classList.toggle('show');
-                    e.target.textContent = codeBlock.classList.contains('show') ? '📋 Hide CSS' : '📋 Show CSS';
-                });
-            });
-
-            document.querySelectorAll('.copy-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const code = e.target.dataset.code;
-                    navigator.clipboard.writeText(code).then(() => {
-                        showToast('CSS copied to clipboard!');
-                        e.target.textContent = '✓ Copied!';
-                        setTimeout(() => {
-                            e.target.textContent = '📋 Copy CSS';
-                        }, 2000);
-                    });
-                });
-            });
         }
 
-        function showToast(message) {
-            const toast = document.createElement('div');
-            toast.className = 'toast';
-            toast.textContent = message;
-            document.body.appendChild(toast);
-            setTimeout(() => toast.remove(), 3000);
+        function copyCSS(name, file, format) {
+            const css = `@font-face {
+  font-family: "${name}";
+  src: url("https://fontly-virid.vercel.app${file}") format("${format}");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}`;
+            navigator.clipboard.writeText(css).then(() => alert('CSS copied to clipboard!'));
         }
 
-        // Event listeners with debouncing
-        document.getElementById('searchInput').addEventListener('input', debounce(filterAndRender, 300));
-        document.getElementById('textInput').addEventListener('input', debounce(renderGallery, 300));
-        
-        document.getElementById('globalSize').addEventListener('input', (e) => {
-            globalSize = parseInt(e.target.value);
-            localStorage.setItem('globalSize', globalSize);
-            document.getElementById('globalSizeDisplay').textContent = globalSize + 'px';
-            renderGallery();
-        });
-
-        document.getElementById('themeToggle').addEventListener('click', () => {
+        // Event Listeners
+        document.getElementById('searchInput').addEventListener('input', applyFilters);
+        document.getElementById('textInput').addEventListener('input', applyFilters);
+        document.getElementById('sortSelect').addEventListener('change', applyFilters);
+        document.getElementById('themeToggle').onclick = () => {
             isDarkMode = !isDarkMode;
             document.body.classList.toggle('dark-mode');
             localStorage.setItem('darkMode', isDarkMode);
             document.getElementById('themeToggle').textContent = isDarkMode ? '☀️ Light' : '🌙 Dark';
-        });
-
-        document.getElementById('viewToggle').addEventListener('click', () => {
+        };
+        document.getElementById('viewToggle').onclick = () => {
             isListView = !isListView;
             document.getElementById('gallery').classList.toggle('list-view');
             localStorage.setItem('listView', isListView);
             document.getElementById('viewToggle').textContent = isListView ? '🔲 Grid' : '📋 List';
-        });
-
-        document.getElementById('resetBtn').addEventListener('click', () => {
+        };
+        document.getElementById('resetBtn').onclick = () => {
             document.getElementById('searchInput').value = '';
             document.getElementById('textInput').value = 'The quick brown fox jumps over the lazy dog';
-            document.getElementById('globalSize').value = 32;
-            globalSize = 32;
-            currentFilter = 'all';
-            document.querySelectorAll('.filter-badge').forEach(badge => {
-                badge.classList.remove('active');
-                if (badge.dataset.filter === 'all') badge.classList.add('active');
-            });
-            localStorage.setItem('globalSize', 32);
-            filterAndRender();
-            showToast('Settings reset!');
-        });
+            document.getElementById('sortSelect').value = 'name-asc';
+            currentCategory = 'all';
+            document.querySelectorAll('.filter-row .badge').forEach(b => b.classList.remove('active'));
+            document.querySelector('[data-category="all"]').classList.add('active');
+            applyFilters();
+        };
 
-        document.querySelectorAll('.filter-badge').forEach(badge => {
-            badge.addEventListener('click', (e) => {
-                document.querySelectorAll('.filter-badge').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-                currentFilter = e.target.dataset.filter;
-                filterAndRender();
-            });
-        });
-
-        // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-            if (e.ctrlKey || e.metaKey) {
-                if (e.key === 'f') {
-                    e.preventDefault();
-                    document.getElementById('searchInput').focus();
-                } else if (e.key === 'g') {
-                    e.preventDefault();
-                    document.getElementById('viewToggle').click();
-                } else if (e.key === 'r') {
-                    e.preventDefault();
-                    document.getElementById('resetBtn').click();
-                }
-            }
-        });
-
-        // Service Worker registration
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed:', err));
-        }
-
-        // Load fonts on page load
-        async function initializeFonts() {
-            document.getElementById('loading').classList.add('show');
-            allFonts = generateFontList();
-            generateFontFaces();
-            filterAndRender();
-            document.getElementById('loading').classList.remove('show');
-        }
-
-        initializeFonts();
+        init();
     </script>
 </body>
 </html>
