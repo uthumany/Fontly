@@ -1,1472 +1,1815 @@
 [
-    {
-        "name": "110 Besmellah Takmob Net",
-        "file": "/fonts/ttf/110-besmellah-takmob-net.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aayatquraan1 4Vkb",
-        "file": "/fonts/ttf/aayatquraan1-4vkb.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aayatquraan2 E6Aw",
-        "file": "/fonts/ttf/aayatquraan2-e6aw.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Al Majeed Quranic Font Shiped",
-        "file": "/fonts/ttf/al-majeed-quranic-font-shiped.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Black",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-black.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Bold",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-bold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Extrabold",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-extrabold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Extralight",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-extralight.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Light",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-light.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Medium",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-medium.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Regular",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Semibold",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-semibold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Aligarharabicfreepersonaluse Thin",
-        "file": "/fonts/otf/aligarharabicfreepersonaluse-thin.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Alladhinademo Ovwz8",
-        "file": "/fonts/otf/alladhinademo-ovwz8.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahmuhammad2022 Axnpx",
-        "file": "/fonts/ttf/allahmuhammad2022-axnpx.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahmuhammad2022 Ez81N",
-        "file": "/fonts/ttf/allahmuhammad2022-ez81n.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahmuhammadcolor Eaxj4",
-        "file": "/fonts/ttf/allahmuhammadcolor-eaxj4.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahmuhammadcolor2 Ovxaa",
-        "file": "/fonts/ttf/allahmuhammadcolor2-ovxaa.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahmuhammadcolor3 Zvxej",
-        "file": "/fonts/ttf/allahmuhammadcolor3-zvxej.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahmuhammadcolor4 3Zvaz",
-        "file": "/fonts/ttf/allahmuhammadcolor4-3zvaz.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahnames3 4Bzn9",
-        "file": "/fonts/ttf/allahnames3-4bzn9.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahnames4 Ow1Vv",
-        "file": "/fonts/ttf/allahnames4-ow1vv.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahnames99 0Wav4",
-        "file": "/fonts/ttf/allahnames99-0wav4.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Allahnamescolor Gxpwy",
-        "file": "/fonts/ttf/allahnamescolor-gxpwy.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Angelbanditdemoregular",
-        "file": "/fonts/ttf/angelbanditdemoregular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Antiquestories",
-        "file": "/fonts/otf/antiquestories.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Arabquranislamic140 K7N4W",
-        "file": "/fonts/ttf/arabquranislamic140-k7n4w.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Arabquranislamic140 Vnmnz",
-        "file": "/fonts/ttf/arabquranislamic140-vnmnz.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightning",
-        "file": "/fonts/ttf/armedlightning.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightning3D",
-        "file": "/fonts/ttf/armedlightning3d.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightning3Dital",
-        "file": "/fonts/ttf/armedlightning3dital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningacad",
-        "file": "/fonts/ttf/armedlightningacad.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningacadital",
-        "file": "/fonts/ttf/armedlightningacadital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningchrome",
-        "file": "/fonts/ttf/armedlightningchrome.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningchromeitalic",
-        "file": "/fonts/ttf/armedlightningchromeitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningcond",
-        "file": "/fonts/ttf/armedlightningcond.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningcondital",
-        "file": "/fonts/ttf/armedlightningcondital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningexpand",
-        "file": "/fonts/ttf/armedlightningexpand.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningexpandital",
-        "file": "/fonts/ttf/armedlightningexpandital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightninggrad",
-        "file": "/fonts/ttf/armedlightninggrad.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightninggraditalic",
-        "file": "/fonts/ttf/armedlightninggraditalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightninghalf",
-        "file": "/fonts/ttf/armedlightninghalf.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightninghalfitalic",
-        "file": "/fonts/ttf/armedlightninghalfitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningitalic",
-        "file": "/fonts/ttf/armedlightningitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightninglaser",
-        "file": "/fonts/ttf/armedlightninglaser.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightninglaseritalic",
-        "file": "/fonts/ttf/armedlightninglaseritalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningleft",
-        "file": "/fonts/ttf/armedlightningleft.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningsemital",
-        "file": "/fonts/ttf/armedlightningsemital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningsquared",
-        "file": "/fonts/ttf/armedlightningsquared.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningsquaredital",
-        "file": "/fonts/ttf/armedlightningsquaredital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningsquaredsemital",
-        "file": "/fonts/ttf/armedlightningsquaredsemital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningsquaredsuperital",
-        "file": "/fonts/ttf/armedlightningsquaredsuperital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningsuperital",
-        "file": "/fonts/ttf/armedlightningsuperital.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningtitle",
-        "file": "/fonts/ttf/armedlightningtitle.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Armedlightningtitleitalic",
-        "file": "/fonts/ttf/armedlightningtitleitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Asyatupersonaluse",
-        "file": "/fonts/otf/asyatupersonaluse.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ballmain",
-        "file": "/fonts/ttf/ballmain.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Bastliga One",
-        "file": "/fonts/ttf/bastliga-one.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Benyoritha G334D",
-        "file": "/fonts/otf/benyoritha-g334d.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Bidenatrial",
-        "file": "/fonts/ttf/bidenatrial.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Bundeyscriptpersonalusebold Qzakx",
-        "file": "/fonts/otf/bundeyscriptpersonalusebold-qzakx.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Bundeyscriptpersonalusebolditalic Do7Dd",
-        "file": "/fonts/otf/bundeyscriptpersonalusebolditalic-do7dd.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Bundeyscriptpersonaluseitalic P7Wor",
-        "file": "/fonts/otf/bundeyscriptpersonaluseitalic-p7wor.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Bundeyscriptpersonaluseregular Al20X",
-        "file": "/fonts/otf/bundeyscriptpersonaluseregular-al20x.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Black",
-        "file": "/fonts/ttf/cairo-black.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Bold",
-        "file": "/fonts/ttf/cairo-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Extrabold",
-        "file": "/fonts/ttf/cairo-extrabold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Extralight",
-        "file": "/fonts/ttf/cairo-extralight.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Light",
-        "file": "/fonts/ttf/cairo-light.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Medium",
-        "file": "/fonts/ttf/cairo-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Regular",
-        "file": "/fonts/ttf/cairo-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Semibold",
-        "file": "/fonts/ttf/cairo-semibold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cairo Variablefont Slnt Wght",
-        "file": "/fonts/ttf/cairo-variablefont-slnt-wght.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Chiralla Vgw9Y",
-        "file": "/fonts/otf/chiralla-vgw9y.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cinzeldecorative Black",
-        "file": "/fonts/otf/cinzeldecorative-black.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cinzeldecorative Bold",
-        "file": "/fonts/ttf/cinzeldecorative-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cinzeldecorative Regular",
-        "file": "/fonts/ttf/cinzeldecorative-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Corpta Demo",
-        "file": "/fonts/otf/corpta-demo.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Cosmo",
-        "file": "/fonts/otf/cosmo.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Dalfitra",
-        "file": "/fonts/ttf/dalfitra.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Danymeka Lxx2D",
-        "file": "/fonts/otf/danymeka-lxx2d.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Eaglehorizonp",
-        "file": "/fonts/ttf/eaglehorizonp.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond Initials",
-        "file": "/fonts/ttf/ebgaramond-initials.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond Initialsf1",
-        "file": "/fonts/ttf/ebgaramond-initialsf1.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond Initialsf2",
-        "file": "/fonts/ttf/ebgaramond-initialsf2.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond08 Italic",
-        "file": "/fonts/ttf/ebgaramond08-italic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond08 Regular",
-        "file": "/fonts/ttf/ebgaramond08-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond12 Allsc",
-        "file": "/fonts/ttf/ebgaramond12-allsc.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond12 Italic",
-        "file": "/fonts/ttf/ebgaramond12-italic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramond12 Regular",
-        "file": "/fonts/ttf/ebgaramond12-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramondsc08 Regular",
-        "file": "/fonts/ttf/ebgaramondsc08-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ebgaramondsc12 Regular",
-        "file": "/fonts/ttf/ebgaramondsc12-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Elmessiri Bold",
-        "file": "/fonts/ttf/elmessiri-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Elmessiri Medium",
-        "file": "/fonts/ttf/elmessiri-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Elmessiri Regular",
-        "file": "/fonts/ttf/elmessiri-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Elmessiri Semibold",
-        "file": "/fonts/ttf/elmessiri-semibold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Elmessiri Variablefont Wght",
-        "file": "/fonts/ttf/elmessiri-variablefont-wght.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Faradisa Demo",
-        "file": "/fonts/otf/faradisa-demo.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Felicitationarabicramadan Walo",
-        "file": "/fonts/ttf/felicitationarabicramadan-walo.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Flavia",
-        "file": "/fonts/otf/flavia.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Florals2",
-        "file": "/fonts/ttf/florals2.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Fontallahnames1 Eagj4",
-        "file": "/fonts/ttf/fontallahnames1-eagj4.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Fontallahnames2 Ezp9X",
-        "file": "/fonts/ttf/fontallahnames2-ezp9x.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Fontallahnames2 Zvgej",
-        "file": "/fonts/ttf/fontallahnames2-zvgej.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Fontallahnames99 Axapx",
-        "file": "/fonts/ttf/fontallahnames99-axapx.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Geraldine Personal Use",
-        "file": "/fonts/ttf/geraldine-personal-use.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ghostlikedemooutline",
-        "file": "/fonts/ttf/ghostlikedemooutline.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ghostlikedemoregular",
-        "file": "/fonts/ttf/ghostlikedemoregular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Black",
-        "file": "/fonts/ttf/glorida-black.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Blackitalic",
-        "file": "/fonts/ttf/glorida-blackitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Bold",
-        "file": "/fonts/ttf/glorida-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Bolditalic",
-        "file": "/fonts/ttf/glorida-bolditalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Extrabold",
-        "file": "/fonts/ttf/glorida-extrabold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Extrabolditalic",
-        "file": "/fonts/ttf/glorida-extrabolditalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Extralight",
-        "file": "/fonts/ttf/glorida-extralight.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Extralightitalic",
-        "file": "/fonts/ttf/glorida-extralightitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Italic",
-        "file": "/fonts/ttf/glorida-italic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Light",
-        "file": "/fonts/ttf/glorida-light.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Lightitalic",
-        "file": "/fonts/ttf/glorida-lightitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Medium",
-        "file": "/fonts/ttf/glorida-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Mediumitalic",
-        "file": "/fonts/ttf/glorida-mediumitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Regular",
-        "file": "/fonts/ttf/glorida-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Semibold",
-        "file": "/fonts/ttf/glorida-semibold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Semibolditalic",
-        "file": "/fonts/ttf/glorida-semibolditalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Thin",
-        "file": "/fonts/ttf/glorida-thin.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Glorida Thinitalic",
-        "file": "/fonts/ttf/glorida-thinitalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Goodly Bold",
-        "file": "/fonts/otf/goodly-bold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Goodly Extralight",
-        "file": "/fonts/otf/goodly-extralight.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Goodly Light",
-        "file": "/fonts/otf/goodly-light.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Goodly Medium",
-        "file": "/fonts/otf/goodly-medium.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Goodly Regular",
-        "file": "/fonts/otf/goodly-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Goodly Semibold",
-        "file": "/fonts/otf/goodly-semibold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Harirayaarabic Regular",
-        "file": "/fonts/otf/harirayaarabic-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Harmattan Bold",
-        "file": "/fonts/ttf/harmattan-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Harmattan Medium",
-        "file": "/fonts/ttf/harmattan-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Harmattan Regular",
-        "file": "/fonts/ttf/harmattan-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Harmattan Semibold",
-        "file": "/fonts/ttf/harmattan-semibold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Herlora Floral Dingbat",
-        "file": "/fonts/ttf/herlora-floral-dingbat.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Hiragenda",
-        "file": "/fonts/ttf/hiragenda.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Islamicicons600 3Lkbx",
-        "file": "/fonts/ttf/islamicicons600-3lkbx.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Kabisat Demo Italic Tall",
-        "file": "/fonts/ttf/kabisat-demo-italic-tall.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Kugile Demo",
-        "file": "/fonts/ttf/kugile-demo.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Kugile Regular",
-        "file": "/fonts/ttf/kugile-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Kultum Ramadhan",
-        "file": "/fonts/otf/kultum-ramadhan.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lasthen",
-        "file": "/fonts/ttf/lasthen.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Leaguespartan Bold",
-        "file": "/fonts/otf/leaguespartan-bold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lemonada Bold",
-        "file": "/fonts/ttf/lemonada-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lemonada Light",
-        "file": "/fonts/ttf/lemonada-light.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lemonada Medium",
-        "file": "/fonts/ttf/lemonada-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lemonada Regular",
-        "file": "/fonts/ttf/lemonada-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lemonada Semibold",
-        "file": "/fonts/ttf/lemonada-semibold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lemonada Variablefont Wght",
-        "file": "/fonts/ttf/lemonada-variablefont-wght.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lora Bold",
-        "file": "/fonts/ttf/lora-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lora Bolditalic",
-        "file": "/fonts/ttf/lora-bolditalic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lora Italic",
-        "file": "/fonts/ttf/lora-italic.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lora Regular",
-        "file": "/fonts/ttf/lora-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lutfeyarabicdemo Outline",
-        "file": "/fonts/otf/lutfeyarabicdemo-outline.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Lutfeyarabicdemo Regular",
-        "file": "/fonts/otf/lutfeyarabicdemo-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Black",
-        "file": "/fonts/ttf/mada-black.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Bold",
-        "file": "/fonts/ttf/mada-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Extrabold",
-        "file": "/fonts/ttf/mada-extrabold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Extralight",
-        "file": "/fonts/ttf/mada-extralight.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Light",
-        "file": "/fonts/ttf/mada-light.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Medium",
-        "file": "/fonts/ttf/mada-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Regular",
-        "file": "/fonts/ttf/mada-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Semibold",
-        "file": "/fonts/ttf/mada-semibold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mada Variablefont Wght",
-        "file": "/fonts/ttf/mada-variablefont-wght.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Marchevoked Demo",
-        "file": "/fonts/otf/marchevoked-demo.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Marhabanarabicdemo Bold",
-        "file": "/fonts/otf/marhabanarabicdemo-bold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Marhabanarabicdemo Boldoblique",
-        "file": "/fonts/otf/marhabanarabicdemo-boldoblique.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Meilaarabicdemo Linebold",
-        "file": "/fonts/otf/meilaarabicdemo-linebold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Meilaarabicdemo Linelight",
-        "file": "/fonts/otf/meilaarabicdemo-linelight.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Meilaarabicdemo Lineregular",
-        "file": "/fonts/otf/meilaarabicdemo-lineregular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Meilaarabicdemo Solid",
-        "file": "/fonts/otf/meilaarabicdemo-solid.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mileast",
-        "file": "/fonts/otf/mileast.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mileast Italic",
-        "file": "/fonts/otf/mileast-italic.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Milkyway Demo",
-        "file": "/fonts/ttf/milkyway-demo.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Modernline Personal Use Bold",
-        "file": "/fonts/otf/modernline-personal-use-bold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Modernline Personal Use Regular",
-        "file": "/fonts/otf/modernline-personal-use-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mohammadrasoolallah1445 5Y1Aa",
-        "file": "/fonts/ttf/mohammadrasoolallah1445-5y1aa.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Molgan",
-        "file": "/fonts/otf/molgan.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Moralana Demo",
-        "file": "/fonts/otf/moralana-demo.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mushym Regular",
-        "file": "/fonts/ttf/mushym-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mustaqimdemo Rvvn8",
-        "file": "/fonts/otf/mustaqimdemo-rvvn8.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Mustaqimdemo Yq82Y",
-        "file": "/fonts/ttf/mustaqimdemo-yq82y.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Nabana Shadow Bold",
-        "file": "/fonts/ttf/nabana-shadow-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Naveidarabicdemo Extrabold",
-        "file": "/fonts/otf/naveidarabicdemo-extrabold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Naveidarabicdemo Regular",
-        "file": "/fonts/otf/naveidarabicdemo-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Naveidarabicdemo Thin",
-        "file": "/fonts/otf/naveidarabicdemo-thin.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Nevera Regular",
-        "file": "/fonts/otf/nevera-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Niconne Regular",
-        "file": "/fonts/ttf/niconne-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Noctra Drip Outline Outline",
-        "file": "/fonts/ttf/noctra-drip-outline-outline.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Noctra Drip Outline Outline 1",
-        "file": "/fonts/ttf/noctra-drip-outline-outline-1.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Oliverra",
-        "file": "/fonts/ttf/oliverra.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Orange Avenue Demo Outline",
-        "file": "/fonts/otf/orange-avenue-demo-outline.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Orange Avenue Demo Regular",
-        "file": "/fonts/otf/orange-avenue-demo-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Orangeavenuedemo Regular",
-        "file": "/fonts/otf/orangeavenuedemo-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Orangeavenueoutlinedemo Regular",
-        "file": "/fonts/otf/orangeavenueoutlinedemo-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Palestine1445 3Zwg3",
-        "file": "/fonts/ttf/palestine1445-3zwg3.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Quransurah01 W1Yo6",
-        "file": "/fonts/ttf/quransurah01-w1yo6.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Quransurah02 D9Lvz",
-        "file": "/fonts/ttf/quransurah02-d9lvz.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Quransurah1 Mlko5",
-        "file": "/fonts/ttf/quransurah1-mlko5.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Quransurah2 7Bov4",
-        "file": "/fonts/ttf/quransurah2-7bov4.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ramis Arabic Trial Medium",
-        "file": "/fonts/otf/ramis-arabic-trial-medium.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Richgold Bold",
-        "file": "/fonts/otf/richgold-bold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Richgold Bold Italic",
-        "file": "/fonts/otf/richgold-bold-italic.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Richgold Light",
-        "file": "/fonts/otf/richgold-light.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Richgold Light Italic",
-        "file": "/fonts/otf/richgold-light-italic.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Richgold Regular",
-        "file": "/fonts/otf/richgold-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Richgold Regular Italic",
-        "file": "/fonts/otf/richgold-regular-italic.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Rockybilly Regular",
-        "file": "/fonts/ttf/rockybilly-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Rooster Personal Use",
-        "file": "/fonts/ttf/rooster-personal-use.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Rostex Oblique",
-        "file": "/fonts/ttf/rostex-oblique.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Rostex Obliqueoutline",
-        "file": "/fonts/ttf/rostex-obliqueoutline.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Rostex Outline",
-        "file": "/fonts/ttf/rostex-outline.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Rostex Regular",
-        "file": "/fonts/ttf/rostex-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Routherghost",
-        "file": "/fonts/otf/routherghost.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Runethia",
-        "file": "/fonts/otf/runethia.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Rusticroadway",
-        "file": "/fonts/otf/rusticroadway.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Ruttany",
-        "file": "/fonts/otf/ruttany.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sabilyregular M21X5",
-        "file": "/fonts/ttf/sabilyregular-m21x5.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sabiyah3D Dyzzm",
-        "file": "/fonts/ttf/sabiyah3d-dyzzm.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sabiyah3D Pgv1A",
-        "file": "/fonts/otf/sabiyah3d-pgv1a.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sabiyahregular Arza2",
-        "file": "/fonts/ttf/sabiyahregular-arza2.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sabiyahregular Q2Vrl",
-        "file": "/fonts/otf/sabiyahregular-q2vrl.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Satimahregular Ogo0A",
-        "file": "/fonts/ttf/satimahregular-ogo0a.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Saudiarabiapersonaluse J92A9",
-        "file": "/fonts/ttf/saudiarabiapersonaluse-j92a9.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sho Card Caps Regular",
-        "file": "/fonts/ttf/sho-card-caps-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sho Card Caps Regular 2",
-        "file": "/fonts/ttf/sho-card-caps-regular-2.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Strenuous 3D",
-        "file": "/fonts/otf/strenuous-3d.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Sudegnakno4 Green Medium",
-        "file": "/fonts/ttf/sudegnakno4-green-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Symphoniecalligraphydemo Regular",
-        "file": "/fonts/otf/symphoniecalligraphydemo-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tajawal Black",
-        "file": "/fonts/ttf/tajawal-black.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tajawal Bold",
-        "file": "/fonts/ttf/tajawal-bold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tajawal Extrabold",
-        "file": "/fonts/ttf/tajawal-extrabold.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tajawal Extralight",
-        "file": "/fonts/ttf/tajawal-extralight.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tajawal Light",
-        "file": "/fonts/ttf/tajawal-light.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tajawal Medium",
-        "file": "/fonts/ttf/tajawal-medium.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tajawal Regular",
-        "file": "/fonts/ttf/tajawal-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "The Beer Golden Palace",
-        "file": "/fonts/ttf/the-beer-golden-palace.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Transcity Demo",
-        "file": "/fonts/otf/transcity-demo.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Travailacharn Regular",
-        "file": "/fonts/ttf/travailacharn-regular.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tufuliarabicdemo Bold",
-        "file": "/fonts/otf/tufuliarabicdemo-bold.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Tufuliarabicdemo Regular",
-        "file": "/fonts/otf/tufuliarabicdemo-regular.otf",
-        "format": "opentype",
-        "category": "decorative"
-    },
-    {
-        "name": "Wertign Personaluseonly",
-        "file": "/fonts/ttf/wertign-personaluseonly.ttf",
-        "format": "truetype",
-        "category": "decorative"
-    }
+  {
+    "name": "110 Besmellah Takmob Net",
+    "file": "/fonts/ttf/110-besmellah-takmob-net.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Aayatquraan1 4Vkb",
+    "file": "/fonts/ttf/aayatquraan1-4vkb.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Aayatquraan2 E6Aw",
+    "file": "/fonts/ttf/aayatquraan2-e6aw.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Al Majeed Quranic Font Shiped",
+    "file": "/fonts/ttf/al-majeed-quranic-font-shiped.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Black",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-black.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Bold",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Extrabold",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-extrabold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Extralight",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-extralight.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Light",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-light.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Medium",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-medium.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Regular",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Semibold",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-semibold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Aligarharabicfreepersonaluse Thin",
+    "file": "/fonts/otf/aligarharabicfreepersonaluse-thin.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Alladhinademo Ovwz8",
+    "file": "/fonts/otf/alladhinademo-ovwz8.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Allahmuhammad2022 Axnpx",
+    "file": "/fonts/ttf/allahmuhammad2022-axnpx.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahmuhammad2022 Ez81N",
+    "file": "/fonts/ttf/allahmuhammad2022-ez81n.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahmuhammadcolor Eaxj4",
+    "file": "/fonts/ttf/allahmuhammadcolor-eaxj4.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahmuhammadcolor2 Ovxaa",
+    "file": "/fonts/ttf/allahmuhammadcolor2-ovxaa.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahmuhammadcolor3 Zvxej",
+    "file": "/fonts/ttf/allahmuhammadcolor3-zvxej.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahmuhammadcolor4 3Zvaz",
+    "file": "/fonts/ttf/allahmuhammadcolor4-3zvaz.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahnames3 4Bzn9",
+    "file": "/fonts/ttf/allahnames3-4bzn9.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahnames4 Ow1Vv",
+    "file": "/fonts/ttf/allahnames4-ow1vv.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahnames99 0Wav4",
+    "file": "/fonts/ttf/allahnames99-0wav4.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Allahnamescolor Gxpwy",
+    "file": "/fonts/ttf/allahnamescolor-gxpwy.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Angelbanditdemoregular",
+    "file": "/fonts/ttf/angelbanditdemoregular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Antiquestories",
+    "file": "/fonts/otf/antiquestories.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Arabquranislamic140 K7N4W",
+    "file": "/fonts/ttf/arabquranislamic140-k7n4w.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Arabquranislamic140 Vnmnz",
+    "file": "/fonts/ttf/arabquranislamic140-vnmnz.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Armedlightning",
+    "file": "/fonts/ttf/armedlightning.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightning3D",
+    "file": "/fonts/ttf/armedlightning3d.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Armedlightning3Dital",
+    "file": "/fonts/ttf/armedlightning3dital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Armedlightningacad",
+    "file": "/fonts/ttf/armedlightningacad.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningacadital",
+    "file": "/fonts/ttf/armedlightningacadital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningchrome",
+    "file": "/fonts/ttf/armedlightningchrome.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Armedlightningchromeitalic",
+    "file": "/fonts/ttf/armedlightningchromeitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Armedlightningcond",
+    "file": "/fonts/ttf/armedlightningcond.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningcondital",
+    "file": "/fonts/ttf/armedlightningcondital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningexpand",
+    "file": "/fonts/ttf/armedlightningexpand.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningexpandital",
+    "file": "/fonts/ttf/armedlightningexpandital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightninggrad",
+    "file": "/fonts/ttf/armedlightninggrad.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightninggraditalic",
+    "file": "/fonts/ttf/armedlightninggraditalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightninghalf",
+    "file": "/fonts/ttf/armedlightninghalf.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightninghalfitalic",
+    "file": "/fonts/ttf/armedlightninghalfitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningitalic",
+    "file": "/fonts/ttf/armedlightningitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightninglaser",
+    "file": "/fonts/ttf/armedlightninglaser.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightninglaseritalic",
+    "file": "/fonts/ttf/armedlightninglaseritalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningleft",
+    "file": "/fonts/ttf/armedlightningleft.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningsemital",
+    "file": "/fonts/ttf/armedlightningsemital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningsquared",
+    "file": "/fonts/ttf/armedlightningsquared.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningsquaredital",
+    "file": "/fonts/ttf/armedlightningsquaredital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningsquaredsemital",
+    "file": "/fonts/ttf/armedlightningsquaredsemital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningsquaredsuperital",
+    "file": "/fonts/ttf/armedlightningsquaredsuperital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningsuperital",
+    "file": "/fonts/ttf/armedlightningsuperital.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningtitle",
+    "file": "/fonts/ttf/armedlightningtitle.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Armedlightningtitleitalic",
+    "file": "/fonts/ttf/armedlightningtitleitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Asyatupersonaluse",
+    "file": "/fonts/otf/asyatupersonaluse.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ballmain",
+    "file": "/fonts/otf/ballmain.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ballmain",
+    "file": "/fonts/ttf/ballmain.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Bastliga One",
+    "file": "/fonts/otf/bastliga-one.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Bastliga One",
+    "file": "/fonts/ttf/bastliga-one.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Benyoritha G334D",
+    "file": "/fonts/otf/benyoritha-g334d.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Bidenatrial",
+    "file": "/fonts/otf/bidenatrial.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Bidenatrial",
+    "file": "/fonts/ttf/bidenatrial.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Bundeyscriptpersonalusebold Qzakx",
+    "file": "/fonts/otf/bundeyscriptpersonalusebold-qzakx.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Bundeyscriptpersonalusebolditalic Do7Dd",
+    "file": "/fonts/otf/bundeyscriptpersonalusebolditalic-do7dd.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Bundeyscriptpersonaluseitalic P7Wor",
+    "file": "/fonts/otf/bundeyscriptpersonaluseitalic-p7wor.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Bundeyscriptpersonaluseregular Al20X",
+    "file": "/fonts/otf/bundeyscriptpersonaluseregular-al20x.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Cairo Black",
+    "file": "/fonts/ttf/cairo-black.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Bold",
+    "file": "/fonts/ttf/cairo-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Extrabold",
+    "file": "/fonts/ttf/cairo-extrabold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Extralight",
+    "file": "/fonts/ttf/cairo-extralight.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Light",
+    "file": "/fonts/ttf/cairo-light.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Medium",
+    "file": "/fonts/ttf/cairo-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Regular",
+    "file": "/fonts/ttf/cairo-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Semibold",
+    "file": "/fonts/ttf/cairo-semibold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cairo Variablefont Slnt Wght",
+    "file": "/fonts/ttf/cairo-variablefont-slnt-wght.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Chiralla Vgw9Y",
+    "file": "/fonts/otf/chiralla-vgw9y.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cinzeldecorative Black",
+    "file": "/fonts/otf/cinzeldecorative-black.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cinzeldecorative Bold",
+    "file": "/fonts/otf/cinzeldecorative-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cinzeldecorative Bold",
+    "file": "/fonts/ttf/cinzeldecorative-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cinzeldecorative Regular",
+    "file": "/fonts/otf/cinzeldecorative-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cinzeldecorative Regular",
+    "file": "/fonts/ttf/cinzeldecorative-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Corpta Demo",
+    "file": "/fonts/otf/corpta-demo.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Cosmo",
+    "file": "/fonts/otf/cosmo.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Dalfitra",
+    "file": "/fonts/otf/dalfitra.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Dalfitra",
+    "file": "/fonts/ttf/dalfitra.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Danymeka Lxx2D",
+    "file": "/fonts/otf/danymeka-lxx2d.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Eaglehorizonp",
+    "file": "/fonts/ttf/eaglehorizonp.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond Initials",
+    "file": "/fonts/ttf/ebgaramond-initials.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond Initialsf1",
+    "file": "/fonts/ttf/ebgaramond-initialsf1.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond Initialsf2",
+    "file": "/fonts/ttf/ebgaramond-initialsf2.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond08 Italic",
+    "file": "/fonts/ttf/ebgaramond08-italic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond08 Regular",
+    "file": "/fonts/ttf/ebgaramond08-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond12 Allsc",
+    "file": "/fonts/ttf/ebgaramond12-allsc.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond12 Italic",
+    "file": "/fonts/ttf/ebgaramond12-italic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramond12 Regular",
+    "file": "/fonts/ttf/ebgaramond12-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramondsc08 Regular",
+    "file": "/fonts/ttf/ebgaramondsc08-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ebgaramondsc12 Regular",
+    "file": "/fonts/ttf/ebgaramondsc12-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Elmessiri Bold",
+    "file": "/fonts/ttf/elmessiri-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Elmessiri Medium",
+    "file": "/fonts/ttf/elmessiri-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Elmessiri Regular",
+    "file": "/fonts/ttf/elmessiri-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Elmessiri Semibold",
+    "file": "/fonts/ttf/elmessiri-semibold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Elmessiri Variablefont Wght",
+    "file": "/fonts/ttf/elmessiri-variablefont-wght.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Faradisa Demo",
+    "file": "/fonts/otf/faradisa-demo.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Felicitationarabicramadan Walo",
+    "file": "/fonts/ttf/felicitationarabicramadan-walo.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Flavia",
+    "file": "/fonts/otf/flavia.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Flavia",
+    "file": "/fonts/ttf/flavia.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Florals2",
+    "file": "/fonts/ttf/florals2.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Serif"
+  },
+  {
+    "name": "Fontallahnames1 Eagj4",
+    "file": "/fonts/ttf/fontallahnames1-eagj4.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Fontallahnames2 Ezp9X",
+    "file": "/fonts/ttf/fontallahnames2-ezp9x.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Fontallahnames2 Zvgej",
+    "file": "/fonts/ttf/fontallahnames2-zvgej.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Fontallahnames99 Axapx",
+    "file": "/fonts/ttf/fontallahnames99-axapx.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Geraldine Personal Use",
+    "file": "/fonts/ttf/geraldine-personal-use.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ghostlikedemooutline",
+    "file": "/fonts/ttf/ghostlikedemooutline.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Ghostlikedemoregular",
+    "file": "/fonts/ttf/ghostlikedemoregular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Glorida Black",
+    "file": "/fonts/ttf/glorida-black.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Blackitalic",
+    "file": "/fonts/ttf/glorida-blackitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Bold",
+    "file": "/fonts/ttf/glorida-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Bolditalic",
+    "file": "/fonts/ttf/glorida-bolditalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Extrabold",
+    "file": "/fonts/ttf/glorida-extrabold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Extrabolditalic",
+    "file": "/fonts/ttf/glorida-extrabolditalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Extralight",
+    "file": "/fonts/ttf/glorida-extralight.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Extralightitalic",
+    "file": "/fonts/ttf/glorida-extralightitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Italic",
+    "file": "/fonts/ttf/glorida-italic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Light",
+    "file": "/fonts/ttf/glorida-light.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Lightitalic",
+    "file": "/fonts/ttf/glorida-lightitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Medium",
+    "file": "/fonts/ttf/glorida-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Mediumitalic",
+    "file": "/fonts/ttf/glorida-mediumitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Regular",
+    "file": "/fonts/ttf/glorida-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Semibold",
+    "file": "/fonts/ttf/glorida-semibold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Semibolditalic",
+    "file": "/fonts/ttf/glorida-semibolditalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Thin",
+    "file": "/fonts/ttf/glorida-thin.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Glorida Thinitalic",
+    "file": "/fonts/ttf/glorida-thinitalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Goodly Bold",
+    "file": "/fonts/otf/goodly-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Goodly Extralight",
+    "file": "/fonts/otf/goodly-extralight.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Goodly Light",
+    "file": "/fonts/otf/goodly-light.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Goodly Medium",
+    "file": "/fonts/otf/goodly-medium.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Goodly Regular",
+    "file": "/fonts/otf/goodly-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Goodly Semibold",
+    "file": "/fonts/otf/goodly-semibold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Harirayaarabic Regular",
+    "file": "/fonts/otf/harirayaarabic-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Harmattan Bold",
+    "file": "/fonts/ttf/harmattan-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Harmattan Medium",
+    "file": "/fonts/ttf/harmattan-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Harmattan Regular",
+    "file": "/fonts/ttf/harmattan-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Harmattan Semibold",
+    "file": "/fonts/ttf/harmattan-semibold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Herlora Floral Dingbat",
+    "file": "/fonts/ttf/herlora-floral-dingbat.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Serif"
+  },
+  {
+    "name": "Hiragenda",
+    "file": "/fonts/ttf/hiragenda.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Islamicicons600 3Lkbx",
+    "file": "/fonts/ttf/islamicicons600-3lkbx.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Kabisat Demo Italic Tall",
+    "file": "/fonts/ttf/kabisat-demo-italic-tall.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Kugile Demo",
+    "file": "/fonts/ttf/kugile-demo.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Kugile Regular",
+    "file": "/fonts/ttf/kugile-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Kultum Ramadhan",
+    "file": "/fonts/otf/kultum-ramadhan.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Lasthen",
+    "file": "/fonts/otf/lasthen.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Lasthen",
+    "file": "/fonts/ttf/lasthen.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Leaguespartan Bold",
+    "file": "/fonts/otf/leaguespartan-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Sans"
+  },
+  {
+    "name": "Leaguespartan Bold",
+    "file": "/fonts/ttf/leaguespartan-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Sans"
+  },
+  {
+    "name": "Lemonada Bold",
+    "file": "/fonts/ttf/lemonada-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Lemonada Light",
+    "file": "/fonts/ttf/lemonada-light.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Lemonada Medium",
+    "file": "/fonts/ttf/lemonada-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Lemonada Regular",
+    "file": "/fonts/ttf/lemonada-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Lemonada Semibold",
+    "file": "/fonts/ttf/lemonada-semibold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Lemonada Variablefont Wght",
+    "file": "/fonts/ttf/lemonada-variablefont-wght.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Lora Bold",
+    "file": "/fonts/ttf/lora-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Serif"
+  },
+  {
+    "name": "Lora Bolditalic",
+    "file": "/fonts/ttf/lora-bolditalic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Serif"
+  },
+  {
+    "name": "Lora Italic",
+    "file": "/fonts/ttf/lora-italic.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Serif"
+  },
+  {
+    "name": "Lora Regular",
+    "file": "/fonts/ttf/lora-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Serif"
+  },
+  {
+    "name": "Lutfeyarabicdemo Outline",
+    "file": "/fonts/otf/lutfeyarabicdemo-outline.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Lutfeyarabicdemo Regular",
+    "file": "/fonts/otf/lutfeyarabicdemo-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Mada Black",
+    "file": "/fonts/ttf/mada-black.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Bold",
+    "file": "/fonts/ttf/mada-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Extrabold",
+    "file": "/fonts/ttf/mada-extrabold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Extralight",
+    "file": "/fonts/ttf/mada-extralight.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Light",
+    "file": "/fonts/ttf/mada-light.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Medium",
+    "file": "/fonts/ttf/mada-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Regular",
+    "file": "/fonts/ttf/mada-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Semibold",
+    "file": "/fonts/ttf/mada-semibold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mada Variablefont Wght",
+    "file": "/fonts/ttf/mada-variablefont-wght.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Marchevoked Demo",
+    "file": "/fonts/otf/marchevoked-demo.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Marhabanarabicdemo Bold",
+    "file": "/fonts/otf/marhabanarabicdemo-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Marhabanarabicdemo Boldoblique",
+    "file": "/fonts/otf/marhabanarabicdemo-boldoblique.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Meilaarabicdemo Linebold",
+    "file": "/fonts/otf/meilaarabicdemo-linebold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Meilaarabicdemo Linelight",
+    "file": "/fonts/otf/meilaarabicdemo-linelight.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Meilaarabicdemo Lineregular",
+    "file": "/fonts/otf/meilaarabicdemo-lineregular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Meilaarabicdemo Solid",
+    "file": "/fonts/otf/meilaarabicdemo-solid.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Mileast",
+    "file": "/fonts/otf/mileast.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mileast Italic",
+    "file": "/fonts/otf/mileast-italic.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Milkyway Demo",
+    "file": "/fonts/ttf/milkyway-demo.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Modernline Personal Use Bold",
+    "file": "/fonts/otf/modernline-personal-use-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Modernline Personal Use Regular",
+    "file": "/fonts/otf/modernline-personal-use-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mohammadrasoolallah1445 5Y1Aa",
+    "file": "/fonts/ttf/mohammadrasoolallah1445-5y1aa.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Molgan",
+    "file": "/fonts/otf/molgan.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Moralana Demo",
+    "file": "/fonts/otf/moralana-demo.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mushym Regular",
+    "file": "/fonts/ttf/mushym-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mustaqimdemo Rvvn8",
+    "file": "/fonts/otf/mustaqimdemo-rvvn8.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Mustaqimdemo Yq82Y",
+    "file": "/fonts/ttf/mustaqimdemo-yq82y.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Nabana Shadow Bold",
+    "file": "/fonts/ttf/nabana-shadow-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Naveidarabicdemo Extrabold",
+    "file": "/fonts/otf/naveidarabicdemo-extrabold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Naveidarabicdemo Regular",
+    "file": "/fonts/otf/naveidarabicdemo-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Naveidarabicdemo Thin",
+    "file": "/fonts/otf/naveidarabicdemo-thin.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Nevera Regular",
+    "file": "/fonts/otf/nevera-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Niconne Regular",
+    "file": "/fonts/ttf/niconne-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Noctra Drip Outline Outline",
+    "file": "/fonts/ttf/noctra-drip-outline-outline.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Noctra Drip Outline Outline 1",
+    "file": "/fonts/ttf/noctra-drip-outline-outline-1.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Oliverra",
+    "file": "/fonts/ttf/oliverra.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Orange Avenue Demo Outline",
+    "file": "/fonts/otf/orange-avenue-demo-outline.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Orange Avenue Demo Regular",
+    "file": "/fonts/otf/orange-avenue-demo-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Orangeavenuedemo Regular",
+    "file": "/fonts/otf/orangeavenuedemo-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Orangeavenueoutlinedemo Regular",
+    "file": "/fonts/otf/orangeavenueoutlinedemo-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Palestine1445 3Zwg3",
+    "file": "/fonts/ttf/palestine1445-3zwg3.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Quransurah01 W1Yo6",
+    "file": "/fonts/ttf/quransurah01-w1yo6.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Quransurah02 D9Lvz",
+    "file": "/fonts/ttf/quransurah02-d9lvz.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Quransurah1 Mlko5",
+    "file": "/fonts/ttf/quransurah1-mlko5.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Quransurah2 7Bov4",
+    "file": "/fonts/ttf/quransurah2-7bov4.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Ramis Arabic Trial Medium",
+    "file": "/fonts/otf/ramis-arabic-trial-medium.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Richgold Bold",
+    "file": "/fonts/otf/richgold-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Richgold Bold Italic",
+    "file": "/fonts/otf/richgold-bold-italic.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Richgold Light",
+    "file": "/fonts/otf/richgold-light.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Richgold Light Italic",
+    "file": "/fonts/otf/richgold-light-italic.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Richgold Regular",
+    "file": "/fonts/otf/richgold-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Richgold Regular Italic",
+    "file": "/fonts/otf/richgold-regular-italic.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Rockybilly Regular",
+    "file": "/fonts/ttf/rockybilly-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Rooster Personal Use",
+    "file": "/fonts/ttf/rooster-personal-use.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Rostex Oblique",
+    "file": "/fonts/otf/rostex-oblique.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Rostex Oblique",
+    "file": "/fonts/ttf/rostex-oblique.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Rostex Obliqueoutline",
+    "file": "/fonts/otf/rostex-obliqueoutline.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Rostex Obliqueoutline",
+    "file": "/fonts/ttf/rostex-obliqueoutline.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Rostex Outline",
+    "file": "/fonts/otf/rostex-outline.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Rostex Outline",
+    "file": "/fonts/ttf/rostex-outline.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Rostex Regular",
+    "file": "/fonts/otf/rostex-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Rostex Regular",
+    "file": "/fonts/ttf/rostex-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Routherghost",
+    "file": "/fonts/otf/routherghost.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Runethia",
+    "file": "/fonts/otf/runethia.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Rusticroadway",
+    "file": "/fonts/otf/rusticroadway.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Ruttany",
+    "file": "/fonts/otf/ruttany.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Sabilyregular M21X5",
+    "file": "/fonts/ttf/sabilyregular-m21x5.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Sabiyah3D Dyzzm",
+    "file": "/fonts/ttf/sabiyah3d-dyzzm.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Sabiyah3D Pgv1A",
+    "file": "/fonts/otf/sabiyah3d-pgv1a.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Sabiyahregular Arza2",
+    "file": "/fonts/ttf/sabiyahregular-arza2.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Sabiyahregular Q2Vrl",
+    "file": "/fonts/otf/sabiyahregular-q2vrl.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Satimahregular Ogo0A",
+    "file": "/fonts/ttf/satimahregular-ogo0a.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Saudiarabiapersonaluse J92A9",
+    "file": "/fonts/ttf/saudiarabiapersonaluse-j92a9.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Sho Card Caps Regular",
+    "file": "/fonts/ttf/sho-card-caps-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Sho Card Caps Regular 2",
+    "file": "/fonts/ttf/sho-card-caps-regular-2.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Strenuous 3D",
+    "file": "/fonts/otf/strenuous-3d.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Display"
+  },
+  {
+    "name": "Sudegnakno4 Green Medium",
+    "file": "/fonts/ttf/sudegnakno4-green-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Symphoniecalligraphydemo Regular",
+    "file": "/fonts/otf/symphoniecalligraphydemo-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Script"
+  },
+  {
+    "name": "Tajawal Black",
+    "file": "/fonts/ttf/tajawal-black.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Tajawal Bold",
+    "file": "/fonts/ttf/tajawal-bold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Tajawal Extrabold",
+    "file": "/fonts/ttf/tajawal-extrabold.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Tajawal Extralight",
+    "file": "/fonts/ttf/tajawal-extralight.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Tajawal Light",
+    "file": "/fonts/ttf/tajawal-light.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Tajawal Medium",
+    "file": "/fonts/ttf/tajawal-medium.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Tajawal Regular",
+    "file": "/fonts/ttf/tajawal-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "The Beer Golden Palace",
+    "file": "/fonts/ttf/the-beer-golden-palace.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Transcity Demo",
+    "file": "/fonts/otf/transcity-demo.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Travailacharn Regular",
+    "file": "/fonts/otf/travailacharn-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Travailacharn Regular",
+    "file": "/fonts/ttf/travailacharn-regular.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  },
+  {
+    "name": "Tufuliarabicdemo Bold",
+    "file": "/fonts/otf/tufuliarabicdemo-bold.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Tufuliarabicdemo Regular",
+    "file": "/fonts/otf/tufuliarabicdemo-regular.otf",
+    "format": "opentype",
+    "category": "decorative",
+    "style": "Arabic"
+  },
+  {
+    "name": "Wertign Personaluseonly",
+    "file": "/fonts/ttf/wertign-personaluseonly.ttf",
+    "format": "truetype",
+    "category": "decorative",
+    "style": "Decorative"
+  }
 ]

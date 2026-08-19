@@ -1,394 +1,391 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Fontly - Advanced Font Preview Gallery with 245+ Premium Fonts">
-    <title>Fontly - Font Preview Gallery</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%23FF6B6B'>F</text></svg>">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8f9fa;
-            --bg-tertiary: #f0f2f5;
-            --text-primary: #1a1a1a;
-            --text-secondary: #666666;
-            --text-tertiary: #999999;
-            --border-color: #e0e0e0;
-            --accent-color: #FF6B6B;
-            --accent-light: #FFE8E8;
-            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
-            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
-        }
-        body.dark-mode {
-            --bg-primary: #0f0f0f;
-            --bg-secondary: #1a1a1a;
-            --bg-tertiary: #252525;
-            --text-primary: #ffffff;
-            --text-secondary: #b0b0b0;
-            --text-tertiary: #808080;
-            --border-color: #333333;
-            --accent-color: #FF8A8A;
-            --accent-light: #4d2626;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-            min-height: 100vh;
-        }
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: var(--bg-primary);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 2rem;
-            box-shadow: var(--shadow-sm);
-        }
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
-        }
-        .logo-section { display: flex; align-items: center; gap: 0.8rem; }
-        .logo {
-            width: 40px; height: 40px;
-            background: var(--accent-color);
-            border-radius: 8px;
-            display: flex; align-items: center; justify-content: center;
-            color: white; font-weight: bold; font-size: 1.5rem;
-        }
-        .controls { display: flex; gap: 0.5rem; }
-        button, select {
-            padding: 0.6rem 1rem;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            background: var(--bg-secondary);
-            color: var(--text-primary);
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: all 0.2s;
-        }
-        button:hover, select:hover { border-color: var(--accent-color); }
-        button.active { background: var(--accent-color); color: white; border-color: var(--accent-color); }
-        
-        .main-container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
-        
-        .filter-panel {
-            background: var(--bg-secondary);
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        .search-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; }
-        .input-group { display: flex; flex-direction: column; gap: 0.5rem; }
-        .input-group label { font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); text-transform: uppercase; }
-        input[type="text"], input[type="number"] {
-            padding: 0.8rem;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-        }
-        .filter-row { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; }
-        .badge {
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            background: var(--bg-tertiary);
-            cursor: pointer;
-            border: 1px solid transparent;
-        }
-        .badge.active { background: var(--accent-color); color: white; }
-        .badge span { opacity: 0.7; font-size: 0.75rem; margin-left: 4px; }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1ea">
+  <meta name="description" content="Fontly is an editorial font discovery workspace with 259 live font previews, smart filters, favorites, and CSS export.">
+  <title>Fontly — Type discovery workspace</title>
+  <link rel="preconnect" href="https://fontly-virid.vercel.app" crossorigin>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f5f1ea;
+      --paper-strong: #fffdf9;
+      --ink: #171717;
+      --muted: #706b63;
+      --line: #dfd8ce;
+      --line-strong: #c8beb1;
+      --accent: #f36f61;
+      --accent-dark: #bf4c41;
+      --accent-soft: #ffe4df;
+      --mint: #d8f0dd;
+      --lavender: #e7e0fa;
+      --shadow: 0 18px 60px rgba(34, 26, 18, .08);
+      --shadow-soft: 0 8px 24px rgba(34, 26, 18, .06);
+      --radius-xl: 28px;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 1.5rem;
-        }
-        .gallery.list-view { grid-template-columns: 1fr; }
-        
-        .font-card {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.5rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .font-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-        .font-info { display: flex; justify-content: space-between; margin-bottom: 1rem; }
-        .font-name { font-weight: 700; font-size: 1.1rem; }
-        .font-tags { display: flex; gap: 0.4rem; }
-        .tag { padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; background: var(--accent-light); color: var(--accent-color); }
-        
-        .preview-box {
-            background: var(--bg-primary);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 1rem;
-            min-height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            overflow: hidden;
-        }
-        
-        mark { background: #ffeb3b; color: black; padding: 0 2px; border-radius: 2px; }
-        
-        .loading-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: var(--bg-primary);
-            display: flex; align-items: center; justify-content: center;
-            z-index: 1000; transition: opacity 0.5s;
-        }
-        .loading-overlay.hidden { opacity: 0; pointer-events: none; }
-        
-        .perf-info { font-size: 0.75rem; color: var(--text-tertiary); margin-top: 1rem; text-align: center; }
+    body.dark-mode {
+      color-scheme: dark;
+      --paper: #171717;
+      --paper-strong: #22201e;
+      --ink: #f5f1ea;
+      --muted: #b6aea4;
+      --line: #3a3632;
+      --line-strong: #524b44;
+      --accent: #ff8b7d;
+      --accent-dark: #ffb2a8;
+      --accent-soft: #4e2d2a;
+      --mint: #213a2b;
+      --lavender: #332c4c;
+      --shadow: 0 18px 60px rgba(0, 0, 0, .2);
+      --shadow-soft: 0 8px 24px rgba(0, 0, 0, .18);
+    }
 
-        @media (max-width: 768px) {
-            .search-row { grid-template-columns: 1fr; }
-            .header-content { flex-direction: column; }
-        }
-    </style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      transition: background .25s ease, color .25s ease;
+    }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
+    button:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+      outline-offset: 2px;
+    }
+    a { color: inherit; }
+
+    .shell { width: min(1440px, calc(100% - 40px)); margin: 0 auto; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid color-mix(in srgb, var(--line) 78%, transparent);
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(18px);
+    }
+    .topbar-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-mark {
+      width: 42px; height: 42px; display: grid; place-items: center;
+      border-radius: 14px; background: var(--accent); color: #fff; font-weight: 900; font-size: 22px;
+      box-shadow: 0 8px 18px rgba(243, 111, 97, .25);
+    }
+    .brand-name { font-size: 20px; font-weight: 850; letter-spacing: -.04em; }
+    .brand-subtitle { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-top: 2px; }
+    .top-actions { display: flex; align-items: center; gap: 8px; }
+
+    .icon-button, .outline-button, .primary-button {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      background: var(--paper-strong);
+      color: var(--ink);
+      font-weight: 750;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    .icon-button:hover, .outline-button:hover, .primary-button:hover { transform: translateY(-1px); border-color: var(--accent); }
+    .primary-button { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+    .primary-button:hover { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; }
+    .icon-button { width: 42px; height: 42px; padding: 0; display: grid; place-items: center; font-size: 18px; }
+    .count-pill { padding: 8px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-dark); font-size: 12px; font-weight: 850; white-space: nowrap; }
+
+    .hero { padding: 72px 0 30px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; align-items: end; gap: 42px; }
+    .eyebrow { color: var(--accent-dark); font-size: 12px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 16px; }
+    .hero h1 { max-width: 820px; margin: 0; font-size: clamp(48px, 7vw, 94px); line-height: .92; letter-spacing: -.085em; font-weight: 900; }
+    .hero h1 em { color: var(--accent); font-family: Georgia, serif; font-weight: 500; letter-spacing: -.06em; }
+    .hero-copy { max-width: 480px; color: var(--muted); line-height: 1.6; font-size: 16px; margin: 18px 0 0; }
+    .hero-aside { display: flex; flex-direction: column; gap: 18px; align-items: flex-end; }
+    .hero-note { border-left: 3px solid var(--accent); padding-left: 16px; max-width: 320px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .hero-metrics { display: flex; gap: 26px; }
+    .metric strong { display: block; font-size: 30px; letter-spacing: -.06em; }
+    .metric span { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .1em; }
+
+    .workspace { padding: 30px 0 100px; }
+    .control-board {
+      position: sticky; top: 77px; z-index: 35;
+      border: 1px solid var(--line); background: color-mix(in srgb, var(--paper-strong) 94%, transparent);
+      border-radius: var(--radius-xl); box-shadow: var(--shadow-soft); padding: 18px;
+      margin-bottom: 24px; backdrop-filter: blur(16px);
+    }
+    .search-line { display: grid; grid-template-columns: minmax(240px, 1.5fr) minmax(180px, .7fr) minmax(160px, .5fr); gap: 10px; }
+    .field { position: relative; }
+    .field input, .field select {
+      width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: 12px;
+      background: var(--paper); color: var(--ink); padding: 0 14px; transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .field input { padding-left: 42px; }
+    .field input:focus, .field select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 16%, transparent); outline: 0; }
+    .field-icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+    .filter-line { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+    .filter-label { color: var(--muted); font-size: 11px; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; margin-right: 4px; }
+    .chip {
+      border: 1px solid var(--line); background: var(--paper); color: var(--muted); border-radius: 999px;
+      min-height: 34px; padding: 0 12px; font-size: 12px; font-weight: 800; transition: all .2s ease;
+    }
+    .chip:hover { border-color: var(--accent); color: var(--accent-dark); }
+    .chip.active { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+    .chip .chip-count { opacity: .65; margin-left: 4px; }
+    .filter-line .spacer { flex: 1; }
+    .text-size { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; }
+    input[type=range] { accent-color: var(--accent); width: 120px; }
+    .toolbar-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .result-copy { font-size: 13px; color: var(--muted); }
+    .result-copy strong { color: var(--ink); }
+    .toolbar-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .small-button { border: 0; background: transparent; color: var(--muted); font-weight: 800; font-size: 12px; padding: 7px 8px; border-radius: 8px; }
+    .small-button:hover { color: var(--accent-dark); background: var(--accent-soft); }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+    .gallery.list-view { grid-template-columns: 1fr; }
+    .font-card {
+      content-visibility: auto; contain-intrinsic-size: 360px;
+      border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--paper-strong); padding: 16px;
+      box-shadow: 0 1px 0 rgba(0,0,0,.02); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .font-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 54%, var(--line)); }
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+    .card-heading { min-width: 0; }
+    .font-name { font-size: 16px; line-height: 1.15; font-weight: 850; letter-spacing: -.03em; overflow-wrap: anywhere; }
+    .font-id { color: var(--muted); font-size: 10px; margin-top: 5px; letter-spacing: .08em; text-transform: uppercase; }
+    .favorite-button, .compare-toggle {
+      width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--muted); display: grid; place-items: center; flex: 0 0 auto;
+    }
+    .favorite-button:hover, .compare-toggle:hover { border-color: var(--accent); color: var(--accent-dark); }
+    .favorite-button.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-dark); }
+    .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 10px; }
+    .tag { background: var(--paper); border: 1px solid var(--line); color: var(--muted); border-radius: 6px; padding: 4px 7px; font-size: 10px; font-weight: 850; letter-spacing: .04em; text-transform: uppercase; }
+    .tag.accent { background: var(--mint); border-color: transparent; color: #2f6b3d; }
+    body.dark-mode .tag.accent { color: #bfeec8; }
+    .preview {
+      display: flex; align-items: center; justify-content: center; text-align: center; min-height: 150px; margin-top: 14px; padding: 18px;
+      border-radius: 13px; border: 1px solid var(--line); background: var(--paper); line-height: 1.16; overflow-wrap: anywhere; word-break: break-word;
+    }
+    .card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 13px; }
+    .card-actions { display: flex; gap: 6px; }
+    .card-button { border: 1px solid var(--line); background: var(--paper); color: var(--muted); border-radius: 8px; padding: 7px 9px; font-size: 11px; font-weight: 800; }
+    .card-button:hover { color: var(--accent-dark); border-color: var(--accent); }
+    .load-state { color: var(--muted); font-size: 11px; }
+    .highlight { background: #ffe37d; color: #231f16; border-radius: 3px; padding: 0 2px; }
+    .empty-state { display: none; text-align: center; padding: 70px 20px; border: 1px dashed var(--line-strong); border-radius: var(--radius-lg); color: var(--muted); }
+    .empty-state h2 { color: var(--ink); font-size: 24px; margin-bottom: 8px; }
+
+    .compare-tray {
+      position: fixed; left: 50%; bottom: 20px; transform: translate(-50%, 130%); z-index: 60;
+      width: min(720px, calc(100% - 28px)); padding: 12px 14px; border: 1px solid var(--line-strong); border-radius: 18px;
+      background: color-mix(in srgb, var(--paper-strong) 94%, transparent); box-shadow: var(--shadow); backdrop-filter: blur(16px);
+      display: flex; align-items: center; gap: 12px; transition: transform .28s ease;
+    }
+    .compare-tray.visible { transform: translate(-50%, 0); }
+    .compare-tray-copy { flex: 1; min-width: 0; }
+    .compare-tray-copy strong { display: block; font-size: 13px; }
+    .compare-tray-copy span { color: var(--muted); font-size: 11px; }
+    .compare-dots { display: flex; gap: 4px; }
+    .compare-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--line-strong); }
+    .compare-dot.on { background: var(--accent); }
+
+    dialog { width: min(980px, calc(100% - 28px)); max-height: 88vh; border: 1px solid var(--line-strong); border-radius: 22px; padding: 0; background: var(--paper-strong); color: var(--ink); box-shadow: var(--shadow); }
+    dialog::backdrop { background: rgba(19, 16, 12, .5); backdrop-filter: blur(4px); }
+    .dialog-head { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid var(--line); }
+    .dialog-head h2 { letter-spacing: -.04em; }
+    .dialog-body { padding: 20px; overflow: auto; }
+    .comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .comparison-item { border: 1px solid var(--line); border-radius: 14px; padding: 14px; background: var(--paper); }
+    .comparison-name { font-weight: 850; font-size: 14px; margin-bottom: 10px; }
+    .comparison-preview { min-height: 190px; display: grid; place-items: center; text-align: center; font-size: 50px; line-height: 1.1; overflow-wrap: anywhere; }
+    .export-area { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .export-area textarea { width: 100%; min-height: 150px; margin-top: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 12px; background: var(--paper); color: var(--ink); font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .toast { position: fixed; right: 20px; bottom: 20px; z-index: 100; background: var(--ink); color: var(--paper); padding: 12px 15px; border-radius: 10px; box-shadow: var(--shadow); font-size: 13px; font-weight: 750; }
+
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 20px; }
+      .hero-aside { align-items: flex-start; }
+      .search-line { grid-template-columns: 1fr 1fr; }
+      .search-line .field:first-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 640px) {
+      .shell { width: min(100% - 24px, 1440px); }
+      .topbar-inner { min-height: 66px; }
+      .brand-subtitle { display: none; }
+      .top-actions .outline-button { display: none; }
+      .hero { padding: 48px 0 18px; }
+      .hero h1 { font-size: clamp(46px, 15vw, 72px); }
+      .hero-metrics { gap: 18px; }
+      .workspace { padding-top: 18px; }
+      .control-board { top: 67px; border-radius: 18px; padding: 12px; }
+      .search-line { grid-template-columns: 1fr; }
+      .search-line .field:first-child { grid-column: auto; }
+      .toolbar-row { align-items: flex-start; flex-direction: column; }
+      .toolbar-actions { justify-content: flex-start; }
+      .gallery { grid-template-columns: 1fr; }
+      .comparison-grid { grid-template-columns: 1fr; }
+      .compare-tray { bottom: 12px; }
+    }
+  </style>
 </head>
 <body>
-    <div id="loading" class="loading-overlay">
-        <div class="logo">F</div>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="/" aria-label="Fontly home">
+        <span class="brand-mark">F</span>
+        <span><span class="brand-name">Fontly</span><span class="brand-subtitle">Type discovery workspace</span></span>
+      </a>
+      <div class="top-actions">
+        <span id="headerCount" class="count-pill">Loading fonts…</span>
+        <button id="themeButton" class="icon-button" type="button" aria-label="Toggle theme">☾</button>
+        <button id="resetButton" class="outline-button" type="button">Reset</button>
+      </div>
     </div>
+  </header>
 
-    <header>
-        <div class="header-content">
-            <div class="logo-section">
-                <div class="logo">F</div>
-                <div>
-                    <h1>Fontly</h1>
-                    <p style="font-size: 0.7rem; color: var(--text-secondary);">Premium Font Explorer</p>
-                </div>
-            </div>
-            <div id="stats" class="badge active">0/0 Fonts</div>
-            <div class="controls">
-                <button id="themeToggle">🌙 Dark</button>
-                <button id="viewToggle">📋 List</button>
-                <button id="resetBtn">↻ Reset</button>
-            </div>
+  <main>
+    <section class="hero shell">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">259 faces · Open for exploration</div>
+          <h1>Find the type that feels <em>right.</em></h1>
+          <p class="hero-copy">A focused workspace for browsing, comparing, and collecting the fonts in your library. Search by name, narrow by style, then export ready-to-use CSS.</p>
         </div>
-    </header>
-
-    <main class="main-container">
-        <div class="filter-panel">
-            <div class="search-row">
-                <div class="input-group">
-                    <label>🔍 Search Fonts</label>
-                    <input type="text" id="searchInput" placeholder="Search by name or category...">
-                </div>
-                <div class="input-group">
-                    <label>✏️ Custom Text</label>
-                    <input type="text" id="textInput" placeholder="Preview text..." value="The quick brown fox jumps over the lazy dog">
-                </div>
-                <div class="input-group">
-                    <label>📏 Sort By</label>
-                    <select id="sortSelect">
-                        <option value="name-asc">Name (A-Z)</option>
-                        <option value="name-desc">Name (Z-A)</option>
-                        <option value="format">Format (OTF/TTF)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="filter-row" id="categoryFilters">
-                <span class="filter-label">Categories:</span>
-                <button class="badge active" data-category="all">All <span></span></button>
-                <!-- Categories will be injected here -->
-            </div>
+        <div class="hero-aside">
+          <div class="hero-note">Every preview is rendered from the live font asset on the Vercel edge. Favorites and comparison selections stay in this browser.</div>
+          <div class="hero-metrics"><div class="metric"><strong id="heroTotal">—</strong><span>font files</span></div><div class="metric"><strong id="heroStyles">—</strong><span>styles</span></div><div class="metric"><strong id="heroFavorites">0</strong><span>saved</span></div></div>
         </div>
+      </div>
+    </section>
 
-        <div id="gallery" class="gallery"></div>
-        <div id="emptyState" style="display: none; text-align: center; padding: 3rem;">
-            <h2>No fonts found</h2>
-            <p>Try adjusting your search or filters</p>
+    <section class="workspace shell">
+      <div class="control-board" aria-label="Font controls">
+        <div class="search-line">
+          <div class="field"><span class="field-icon" aria-hidden="true">⌕</span><label class="sr-only" for="searchInput">Search the font library</label><input id="searchInput" type="search" autocomplete="off" placeholder="Search fonts by name or style…"></div>
+          <div class="field"><label class="sr-only" for="previewInput">Preview text</label><input id="previewInput" type="text" value="The quick brown fox jumps over the lazy dog" placeholder="Preview text…"></div>
+          <div class="field"><label class="sr-only" for="sortSelect">Sort fonts</label><select id="sortSelect"><option value="name-asc">Name · A to Z</option><option value="name-desc">Name · Z to A</option><option value="format">Format · OTF first</option><option value="style">Style · grouped</option></select></div>
         </div>
-        
-        <div class="perf-info" id="perfInfo"></div>
-    </main>
+        <div class="filter-line" id="styleFilters"><span class="filter-label">Style</span><button class="chip active" data-style="all" type="button">All <span class="chip-count"></span></button></div>
+        <div class="filter-line" id="formatFilters"><span class="filter-label">Format</span><button class="chip active" data-format="all" type="button">All</button><button class="chip" data-format="opentype" type="button">OTF <span class="chip-count"></span></button><button class="chip" data-format="truetype" type="button">TTF <span class="chip-count"></span></button><span class="spacer"></span><label class="text-size" for="sizeRange">Preview size <input id="sizeRange" type="range" min="20" max="86" value="42"><output id="sizeValue">42px</output></label></div>
+        <div class="toolbar-row"><div class="result-copy" id="resultCopy">Loading the library…</div><div class="toolbar-actions"><button class="small-button" id="favoritesToggle" type="button">♡ Favorites only</button><button class="small-button" id="viewToggle" type="button">▦ Grid view</button><button class="small-button" id="exportButton" type="button">↗ Export CSS</button></div></div>
+      </div>
 
-    <script>
-        let allFonts = [];
-        let filteredFonts = [];
-        let currentCategory = 'all';
-        let isDarkMode = localStorage.getItem('darkMode') === 'true';
-        let isListView = localStorage.getItem('listView') === 'true';
+      <div id="gallery" class="gallery" aria-live="polite"></div>
+      <div id="emptyState" class="empty-state"><h2>No matches yet.</h2><p>Try a different word, style, or format.</p><button id="clearFilters" class="primary-button" type="button" style="margin-top:16px">Clear filters</button></div>
+    </section>
+  </main>
 
-        // Initialize UI
-        if (isDarkMode) document.body.classList.add('dark-mode');
-        if (isListView) document.getElementById('gallery').classList.add('list-view');
+  <div id="compareTray" class="compare-tray" aria-live="polite"><div class="compare-dots"><i class="compare-dot"></i><i class="compare-dot"></i><i class="compare-dot"></i><i class="compare-dot"></i></div><div class="compare-tray-copy"><strong id="compareTitle">Compare fonts</strong><span id="compareSubtitle">Select up to four faces from the gallery.</span></div><button id="openCompare" class="primary-button" type="button" disabled>Open comparison</button><button id="clearCompare" class="small-button" type="button">Clear</button></div>
 
-        async function init() {
-            try {
-                const response = await fetch('/fonts.json');
-                allFonts = await response.json();
-                
-                // Inject @font-face rules
-                const style = document.createElement('style');
-                style.textContent = allFonts.map((f, i) => `
-                    @font-face {
-                        font-family: 'f-${i}';
-                        src: url("${f.file}") format("${f.format}");
-                        font-display: swap;
-                    }
-                `).join('');
-                document.head.appendChild(style);
+  <dialog id="compareDialog"><div class="dialog-head"><div><div class="eyebrow" style="margin-bottom:5px">Comparison desk</div><h2>Same words. Different voice.</h2></div><button id="closeCompare" class="icon-button" type="button" aria-label="Close comparison">×</button></div><div class="dialog-body"><div id="comparisonGrid" class="comparison-grid"></div><div class="export-area"><div style="display:flex;align-items:center;justify-content:space-between;gap:10px"><strong>CSS export</strong><button id="copyExport" class="outline-button" type="button">Copy CSS</button></div><textarea id="exportOutput" readonly aria-label="Generated CSS"></textarea></div></div></dialog>
+  <div id="toast" class="toast" hidden></div>
 
-                renderCategories();
-                applyFilters();
-                
-                document.getElementById('loading').classList.add('hidden');
-                
-                // Show performance metrics
-                window.addEventListener('load', () => {
-                    setTimeout(() => {
-                        const nav = performance.getEntriesByType('navigation')[0];
-                        const fcp = performance.getEntriesByType('paint').find(p => p.name === 'first-contentful-paint')?.startTime;
-                        document.getElementById('perfInfo').textContent = 
-                            `FCP: ${Math.round(fcp)}ms | Load: ${Math.round(nav.loadEventEnd)}ms | Optimized by Vercel Edge`;
-                    }, 100);
-                });
-            } catch (e) {
-                console.error("Failed to load fonts", e);
-            }
-        }
+  <script>
+    const state = {
+      fonts: [], filtered: [], style: 'all', format: 'all', sort: 'name-asc', query: '', preview: 'The quick brown fox jumps over the lazy dog', size: 42,
+      favorites: new Set(JSON.parse(localStorage.getItem('fontly:favorites') || '[]')), compare: new Set(), favoritesOnly: false, listView: localStorage.getItem('fontly:list-view') === 'true'
+    };
+    const els = {
+      gallery: document.getElementById('gallery'), empty: document.getElementById('emptyState'), search: document.getElementById('searchInput'), preview: document.getElementById('previewInput'), sort: document.getElementById('sortSelect'), size: document.getElementById('sizeRange'), sizeValue: document.getElementById('sizeValue'), styleFilters: document.getElementById('styleFilters'), headerCount: document.getElementById('headerCount'), result: document.getElementById('resultCopy'), favoritesToggle: document.getElementById('favoritesToggle'), viewToggle: document.getElementById('viewToggle'), compareTray: document.getElementById('compareTray'), compareTitle: document.getElementById('compareTitle'), compareSubtitle: document.getElementById('compareSubtitle'), openCompare: document.getElementById('openCompare'), compareDialog: document.getElementById('compareDialog'), comparisonGrid: document.getElementById('comparisonGrid'), exportOutput: document.getElementById('exportOutput'), toast: document.getElementById('toast')
+    };
+    let toastTimer;
 
-        function renderCategories() {
-            const counts = allFonts.reduce((acc, f) => {
-                acc[f.category] = (acc[f.category] || 0) + 1;
-                return acc;
-            }, {});
-            
-            const container = document.getElementById('categoryFilters');
-            const allSpan = container.querySelector('[data-category="all"] span');
-            allSpan.textContent = `(${allFonts.length})`;
+    function esc(value) { return String(value).replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char])); }
+    function formatLabel(format) { return format === 'opentype' ? 'OTF' : 'TTF'; }
+    function keyFor(font) { return font.file; }
+    function familyFor(font) { return `fontly-${state.fonts.indexOf(font)}`; }
+    function highlight(name) {
+      const safe = esc(name); if (!state.query) return safe;
+      const needle = esc(state.query).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      return safe.replace(new RegExp(`(${needle})`, 'ig'), '<mark class="highlight">$1</mark>');
+    }
+    function save() { localStorage.setItem('fontly:favorites', JSON.stringify([...state.favorites])); document.getElementById('heroFavorites').textContent = state.favorites.size; }
+    function notify(message) { clearTimeout(toastTimer); els.toast.textContent = message; els.toast.hidden = false; toastTimer = setTimeout(() => els.toast.hidden = true, 2200); }
 
-            Object.entries(counts).forEach(([cat, count]) => {
-                const btn = document.createElement('button');
-                btn.className = 'badge';
-                btn.dataset.category = cat;
-                btn.innerHTML = `${cat.charAt(0).toUpperCase() + cat.slice(1)} <span>(${count})</span>`;
-                btn.onclick = () => {
-                    document.querySelectorAll('.filter-row .badge').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    currentCategory = cat;
-                    applyFilters();
-                };
-                container.appendChild(btn);
-            });
-        }
+    function injectFontFaces() {
+      const style = document.createElement('style');
+      style.id = 'fontly-faces';
+      style.textContent = state.fonts.map((font, index) => `@font-face{font-family:'fontly-${index}';src:url('${font.file}') format('${font.format}');font-display:swap;}`).join('');
+      document.head.appendChild(style);
+    }
 
-        function highlightMatch(text, query) {
-            if (!query) return text;
-            const regex = new RegExp(`(${query})`, 'gi');
-            return text.replace(regex, '<mark>$1</mark>');
-        }
+    function makeStyleFilters() {
+      const counts = state.fonts.reduce((map, font) => { map[font.style] = (map[font.style] || 0) + 1; return map; }, {});
+      Object.keys(counts).sort().forEach(style => {
+        const button = document.createElement('button'); button.type = 'button'; button.className = 'chip'; button.dataset.style = style; button.innerHTML = `${esc(style)} <span class="chip-count">${counts[style]}</span>`; els.styleFilters.appendChild(button);
+      });
+      els.styleFilters.addEventListener('click', event => { const button = event.target.closest('[data-style]'); if (!button) return; state.style = button.dataset.style; setActive(els.styleFilters, 'style', state.style); apply(); });
+    }
+    function setActive(container, attribute, value) { container.querySelectorAll(`[data-${attribute}]`).forEach(button => button.classList.toggle('active', button.dataset[attribute] === value)); }
+    function makeFormatCounts() {
+      const counts = state.fonts.reduce((map, font) => { map[font.format] = (map[font.format] || 0) + 1; return map; }, {});
+      els.formatButtons = [...document.querySelectorAll('[data-format]')];
+      els.formatButtons.forEach(button => { const count = button.dataset.format === 'all' ? state.fonts.length : counts[button.dataset.format] || 0; const counter = button.querySelector('.chip-count'); if (counter) counter.textContent = count; });
+      document.getElementById('formatFilters').addEventListener('click', event => { const button = event.target.closest('[data-format]'); if (!button) return; state.format = button.dataset.format; setActive(document.getElementById('formatFilters'), 'format', state.format); apply(); });
+    }
 
-        function applyFilters() {
-            const query = document.getElementById('searchInput').value.toLowerCase();
-            const sort = document.getElementById('sortSelect').value;
+    function apply() {
+      state.query = els.search.value.trim().toLowerCase(); state.preview = els.preview.value || 'The quick brown fox jumps over the lazy dog'; state.sort = els.sort.value;
+      state.filtered = state.fonts.filter(font => {
+        const haystack = `${font.name} ${font.style} ${font.format}`.toLowerCase();
+        return haystack.includes(state.query) && (state.style === 'all' || font.style === state.style) && (state.format === 'all' || font.format === state.format) && (!state.favoritesOnly || state.favorites.has(keyFor(font)));
+      });
+      state.filtered.sort((a, b) => state.sort === 'name-desc' ? b.name.localeCompare(a.name) : state.sort === 'format' ? b.format.localeCompare(a.format) || a.name.localeCompare(b.name) : state.sort === 'style' ? a.style.localeCompare(b.style) || a.name.localeCompare(b.name) : a.name.localeCompare(b.name));
+      render();
+      updateUrl();
+    }
 
-            filteredFonts = allFonts.filter(f => {
-                const matchesSearch = f.name.toLowerCase().includes(query) || f.category.toLowerCase().includes(query);
-                const matchesCat = currentCategory === 'all' || f.category === currentCategory;
-                return matchesSearch && matchesCat;
-            });
+    function cardTemplate(font) {
+      const index = state.fonts.indexOf(font); const key = keyFor(font); const isFavorite = state.favorites.has(key); const isCompared = state.compare.has(key);
+      return `<article class="font-card" data-key="${esc(key)}"><div class="card-top"><div class="card-heading"><div class="font-name">${highlight(font.name)}</div><div class="font-id">${esc(font.file.split('/').pop())}</div></div><div style="display:flex;gap:6px"><button class="favorite-button ${isFavorite ? 'active' : ''}" data-action="favorite" aria-label="${isFavorite ? 'Remove from favorites' : 'Add to favorites'}" aria-pressed="${isFavorite}">${isFavorite ? '♥' : '♡'}</button><button class="compare-toggle ${isCompared ? 'active' : ''}" data-action="compare" aria-label="${isCompared ? 'Remove from comparison' : 'Add to comparison'}" aria-pressed="${isCompared}">${isCompared ? '✓' : '+'}</button></div></div><div class="tag-row"><span class="tag accent">${formatLabel(font.format)}</span><span class="tag">${esc(font.style)}</span></div><div class="preview" data-preview style="font-family:'${familyFor(font)}';font-size:${state.size}px">${esc(state.preview)}</div><div class="card-bottom"><span class="load-state" data-font-state>Ready on demand</span><div class="card-actions"><button class="card-button" data-action="copy">Copy CSS</button><a class="card-button" href="${esc(font.file)}" download>Download</a></div></div></article>`;
+    }
 
-            // Sort
-            filteredFonts.sort((a, b) => {
-                if (sort === 'name-asc') return a.name.localeCompare(b.name);
-                if (sort === 'name-desc') return b.name.localeCompare(a.name);
-                if (sort === 'format') return a.format.localeCompare(b.format);
-                return 0;
-            });
+    function render() {
+      els.gallery.classList.toggle('list-view', state.listView); els.viewToggle.textContent = state.listView ? '▤ List view' : '▦ Grid view';
+      els.gallery.innerHTML = state.filtered.map(cardTemplate).join(''); els.empty.style.display = state.filtered.length ? 'none' : 'block';
+      els.result.innerHTML = `<strong>${state.filtered.length}</strong> of ${state.fonts.length} faces${state.favoritesOnly ? ' · favorites' : ''}`;
+      els.headerCount.textContent = `${state.filtered.length}/${state.fonts.length} faces`;
+      document.querySelectorAll('[data-preview]').forEach(preview => preview.style.fontSize = `${state.size}px`);
+      hydrateVisibleFonts(); updateCompareTray();
+    }
 
-            renderGallery(query);
-            document.getElementById('stats').textContent = `${filteredFonts.length}/${allFonts.length} Fonts`;
-            document.getElementById('emptyState').style.display = filteredFonts.length ? 'none' : 'block';
-        }
+    async function hydrateVisibleFonts() {
+      const cards = [...document.querySelectorAll('.font-card')];
+      const load = card => { const font = state.fonts.find(item => item.file === card.dataset.key); if (!font || card.dataset.loaded) return; card.dataset.loaded = 'true'; document.fonts.load(`${state.size}px fontly-${state.fonts.indexOf(font)}`).then(() => { const label = card.querySelector('[data-font-state]'); if (label) label.textContent = 'Font loaded'; }).catch(() => { const label = card.querySelector('[data-font-state]'); if (label) label.textContent = 'Preview unavailable'; }); };
+      if ('IntersectionObserver' in window) { const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { load(entry.target); observer.unobserve(entry.target); } }), { rootMargin: '500px' }); cards.forEach(card => observer.observe(card)); } else cards.forEach(load);
+    }
 
-        function renderGallery(query) {
-            const gallery = document.getElementById('gallery');
-            const customText = document.getElementById('textInput').value || "The quick brown fox jumps over the lazy dog";
-            
-            gallery.innerHTML = filteredFonts.map(f => {
-                const idx = allFonts.indexOf(f);
-                return `
-                    <div class="font-card">
-                        <div class="font-info">
-                            <div class="font-name">${highlightMatch(f.name, query)}</div>
-                            <div class="font-tags">
-                                <span class="tag">${f.format === 'truetype' ? 'TTF' : 'OTF'}</span>
-                                <span class="tag">${f.category}</span>
-                            </div>
-                        </div>
-                        <div class="preview-box" style="font-family: 'f-${idx}';">
-                            ${customText}
-                        </div>
-                        <div class="controls">
-                            <button onclick="copyCSS('${f.name}', '${f.file}', '${f.format}')">📋 Copy CSS</button>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-        }
+    function updateCompareTray() { const count = state.compare.size; els.compareTray.classList.toggle('visible', count > 0); els.compareTitle.textContent = count ? `${count} font${count === 1 ? '' : 's'} selected` : 'Compare fonts'; els.compareSubtitle.textContent = count ? 'Open the comparison desk to see them together.' : 'Select up to four faces from the gallery.'; els.openCompare.disabled = count < 2; document.querySelectorAll('.compare-dot').forEach((dot, index) => dot.classList.toggle('on', index < count)); }
+    function cssFor(font) { return `@font-face {\n  font-family: "${font.name}";\n  src: url("https://fontly-virid.vercel.app${font.file}") format("${font.format}");\n  font-weight: normal;\n  font-style: normal;\n  font-display: swap;\n}`; }
+    function openComparison() { const selected = state.fonts.filter(font => state.compare.has(keyFor(font))); els.comparisonGrid.innerHTML = selected.map(font => `<div class="comparison-item"><div class="comparison-name">${esc(font.name)}</div><div class="comparison-preview" style="font-family:'${familyFor(font)}'">${esc(state.preview)}</div><div class="tag-row"><span class="tag accent">${formatLabel(font.format)}</span><span class="tag">${esc(font.style)}</span></div></div>`).join(''); els.exportOutput.value = selected.map(cssFor).join('\n\n'); els.compareDialog.showModal(); }
+    function exportCSS() { const source = state.favoritesOnly ? state.fonts.filter(font => state.favorites.has(keyFor(font))) : state.filtered; if (!source.length) return notify('No fonts in the current selection.'); navigator.clipboard.writeText(source.map(cssFor).join('\n\n')).then(() => notify(`${source.length} CSS rules copied.`)); }
+    function updateUrl() { const params = new URLSearchParams(); if (state.query) params.set('q', state.query); if (state.style !== 'all') params.set('style', state.style); if (state.format !== 'all') params.set('format', state.format); if (state.favoritesOnly) params.set('favorites', '1'); history.replaceState({}, '', params.toString() ? `?${params}` : location.pathname); }
+    function loadUrl() { const params = new URLSearchParams(location.search); els.search.value = params.get('q') || ''; state.style = params.get('style') || 'all'; state.format = params.get('format') || 'all'; state.favoritesOnly = params.get('favorites') === '1'; setActive(els.styleFilters, 'style', state.style); setActive(document.getElementById('formatFilters'), 'format', state.format); }
 
-        function copyCSS(name, file, format) {
-            const css = `@font-face {
-  font-family: "${name}";
-  src: url("https://fontly-virid.vercel.app${file}") format("${format}");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}`;
-            navigator.clipboard.writeText(css).then(() => alert('CSS copied to clipboard!'));
-        }
+    els.gallery.addEventListener('click', event => { const action = event.target.closest('[data-action]')?.dataset.action; const card = event.target.closest('.font-card'); if (!action || !card) return; const key = card.dataset.key; const font = state.fonts.find(item => item.file === key); if (action === 'favorite') { state.favorites.has(key) ? state.favorites.delete(key) : state.favorites.add(key); save(); apply(); notify(state.favorites.has(key) ? 'Added to favorites.' : 'Removed from favorites.'); } else if (action === 'compare') { if (state.compare.has(key)) state.compare.delete(key); else if (state.compare.size < 4) state.compare.add(key); else return notify('Comparison is limited to four fonts.'); render(); } else if (action === 'copy') { navigator.clipboard.writeText(cssFor(font)).then(() => notify('CSS copied to clipboard.')); } });
+    els.search.addEventListener('input', apply); els.preview.addEventListener('input', () => { state.preview = els.preview.value; document.querySelectorAll('[data-preview]').forEach(node => node.textContent = state.preview); }); els.sort.addEventListener('change', apply); els.size.addEventListener('input', () => { state.size = Number(els.size.value); els.sizeValue.textContent = `${state.size}px`; document.querySelectorAll('[data-preview]').forEach(node => node.style.fontSize = `${state.size}px`); });
+    els.favoritesToggle.addEventListener('click', () => { state.favoritesOnly = !state.favoritesOnly; els.favoritesToggle.textContent = state.favoritesOnly ? '♥ Showing favorites' : '♡ Favorites only'; els.favoritesToggle.style.color = state.favoritesOnly ? 'var(--accent-dark)' : ''; apply(); });
+    els.viewToggle.addEventListener('click', () => { state.listView = !state.listView; localStorage.setItem('fontly:list-view', state.listView); render(); });
+    document.getElementById('exportButton').addEventListener('click', exportCSS); document.getElementById('openCompare').addEventListener('click', openComparison); document.getElementById('closeCompare').addEventListener('click', () => els.compareDialog.close()); document.getElementById('clearCompare').addEventListener('click', () => { state.compare.clear(); updateCompareTray(); render(); }); document.getElementById('copyExport').addEventListener('click', () => navigator.clipboard.writeText(els.exportOutput.value).then(() => notify('Comparison CSS copied.'))); document.getElementById('clearFilters').addEventListener('click', () => { state.style = 'all'; state.format = 'all'; state.favoritesOnly = false; els.search.value = ''; setActive(els.styleFilters, 'style', 'all'); setActive(document.getElementById('formatFilters'), 'format', 'all'); els.favoritesToggle.textContent = '♡ Favorites only'; apply(); });
+    document.getElementById('resetButton').addEventListener('click', () => { state.style = 'all'; state.format = 'all'; state.favoritesOnly = false; els.search.value = ''; els.preview.value = 'The quick brown fox jumps over the lazy dog'; els.sort.value = 'name-asc'; state.size = 42; els.size.value = '42'; els.sizeValue.textContent = '42px'; els.favoritesToggle.textContent = '♡ Favorites only'; setActive(els.styleFilters, 'style', 'all'); setActive(document.getElementById('formatFilters'), 'format', 'all'); apply(); notify('Workspace reset.'); });
+    document.getElementById('themeButton').addEventListener('click', () => { document.body.classList.toggle('dark-mode'); localStorage.setItem('fontly:dark', document.body.classList.contains('dark-mode')); document.getElementById('themeButton').textContent = document.body.classList.contains('dark-mode') ? '☀' : '☾'; });
+    document.addEventListener('keydown', event => { if (event.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') { event.preventDefault(); els.search.focus(); } if (event.key === 'Escape' && els.search.value) { els.search.value = ''; apply(); } });
 
-        // Event Listeners
-        document.getElementById('searchInput').addEventListener('input', applyFilters);
-        document.getElementById('textInput').addEventListener('input', applyFilters);
-        document.getElementById('sortSelect').addEventListener('change', applyFilters);
-        document.getElementById('themeToggle').onclick = () => {
-            isDarkMode = !isDarkMode;
-            document.body.classList.toggle('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
-            document.getElementById('themeToggle').textContent = isDarkMode ? '☀️ Light' : '🌙 Dark';
-        };
-        document.getElementById('viewToggle').onclick = () => {
-            isListView = !isListView;
-            document.getElementById('gallery').classList.toggle('list-view');
-            localStorage.setItem('listView', isListView);
-            document.getElementById('viewToggle').textContent = isListView ? '🔲 Grid' : '📋 List';
-        };
-        document.getElementById('resetBtn').onclick = () => {
-            document.getElementById('searchInput').value = '';
-            document.getElementById('textInput').value = 'The quick brown fox jumps over the lazy dog';
-            document.getElementById('sortSelect').value = 'name-asc';
-            currentCategory = 'all';
-            document.querySelectorAll('.filter-row .badge').forEach(b => b.classList.remove('active'));
-            document.querySelector('[data-category="all"]').classList.add('active');
-            applyFilters();
-        };
-
-        init();
-    </script>
+    async function init() {
+      try {
+        const response = await fetch('/fonts.json', { cache: 'force-cache' }); if (!response.ok) throw new Error('Font metadata request failed'); state.fonts = await response.json();
+        injectFontFaces(); makeStyleFilters(); makeFormatCounts(); loadUrl();
+        document.getElementById('heroTotal').textContent = state.fonts.length; document.getElementById('heroStyles').textContent = new Set(state.fonts.map(font => font.style)).size; document.getElementById('heroFavorites').textContent = state.favorites.size;
+        if (localStorage.getItem('fontly:dark') === 'true') { document.body.classList.add('dark-mode'); document.getElementById('themeButton').textContent = '☀'; }
+        if (state.favoritesOnly) els.favoritesToggle.textContent = '♥ Showing favorites'; apply();
+      } catch (error) { els.result.textContent = 'Unable to load the font library.'; els.empty.style.display = 'block'; console.error(error); }
+    }
+    init();
+  </script>
 </body>
 </html>
